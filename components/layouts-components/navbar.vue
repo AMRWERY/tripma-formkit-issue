@@ -1,7 +1,7 @@
 <template>
   <div>
     <header class="z-30 flex items-center w-full h-24 sm:h-24 navbar">
-      <div class="container flex items-center justify-between px-6 mx-auto">
+      <div class="container flex items-center justify-between max-w-full px-4 px-6 py-6 mx-auto sm:px-6 lg:px-8">
         <nuxt-link to="/" class="text-3xl font-black text-gray-800">
           Tripma
         </nuxt-link>
@@ -15,6 +15,9 @@
             <nuxt-link to="/auth/sign-up"
               class="flex items-center px-6 py-2 text-gray-800 transition border border-gray-800 rounded hover:bg-gray-800 hover:text-white">Sign
               up</nuxt-link>
+            <nuxt-link to="" role="button" @click="logout" class="flex items-center px-6 py-2 text-gray-800 transition">
+              <icon name="mdi:logout" size="30px" />
+            </nuxt-link>
           </nav>
           <button type="button" class="flex flex-col ml-4 lg:hidden" @click="toggleMenu">
             <icon name="mingcute:menu-fill" class="mb-1" />
@@ -33,6 +36,9 @@
           <nuxt-link to="/auth/sign-up"
             class="px-4 py-2 text-gray-800 transition border border-gray-800 rounded hover:bg-gray-800 hover:text-white">Sign
             up</nuxt-link>
+          <nuxt-link to="" role="button" @click="logout" class="px-6 py-2 text-gray-800 transition">
+            <icon name="mdi:logout" size="30px" />
+          </nuxt-link>
         </div>
       </div>
     </transition>
@@ -40,10 +46,23 @@
 </template>
 
 <script setup>
+const store = useAuthStore()
+
 const isMenuOpen = ref(false)
 
 const toggleMenu = () => {
   isMenuOpen.value = !isMenuOpen.value
+}
+
+const logout = () => {
+  try {
+    store.logout();
+    setTimeout(() => {
+      location.reload();
+    }, 500);
+  } catch (error) {
+    console.log(error);
+  }
 }
 </script>
 

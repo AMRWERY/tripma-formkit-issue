@@ -1,5 +1,5 @@
 import { en, ar } from "@formkit/i18n";
-import { defineFormKitConfig, FormKitSchema } from "@formkit/vue";
+import { defineFormKitConfig } from "@formkit/vue";
 import {
   createAutoAnimatePlugin,
   createAutoHeightTextareaPlugin,

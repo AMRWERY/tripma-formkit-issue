@@ -5,23 +5,15 @@
         class="absolute inset-0 object-cover w-full h-full">
       <div class="absolute inset-0 bg-black bg-opacity-50"></div>
       <div class="absolute inset-0 flex flex-col items-center justify-center">
-        <div class="py-2 bg-white rounded-2xl">
-          <div class="px-4 mx-auto max-w-screen-2xl">
+        <div class="w-full max-w-md py-2 mx-auto bg-white rounded-2xl">
+          <div class="mx-auto max-w-screen-2xl">
             <h2 class="mb-4 text-2xl font-bold text-center text-gray-800 md:mb-8 lg:text-3xl">Login</h2>
 
-            <FormKit type="form" v-model="data" @submit="register" class="max-w-lg mx-auto">
-              <div class="flex flex-col gap-4 p-4 md:p-8">
+            <FormKit type="form" id="login-form" v-model="data" :actions="false" :incomplete-message="false"
+              @submit="signIn" class="max-w-lg mx-auto">
+              <div class="flex flex-col gap-4 p-4">
                 <div>
-                  <label for="email" class="inline-block mb-2 text-sm text-gray-800 sm:text-base">Email</label>
-                  <!-- <input name="email"
-                    class="w-full px-3 py-2 text-gray-800 transition duration-100 border rounded outline-none bg-gray-50 ring-indigo-300 focus:ring" /> -->
                   <FormKitSchema :schema="schema" />
-                </div>
-
-                <div>
-                  <label for="password" class="inline-block mb-2 text-sm text-gray-800 sm:text-base">Password</label>
-                  <input name="password"
-                    class="w-full px-3 py-2 text-gray-800 transition duration-100 border rounded outline-none bg-gray-50 ring-indigo-300 focus:ring" />
                 </div>
 
                 <button type="submit"
@@ -32,13 +24,13 @@
                   <span class="relative px-4 text-sm text-gray-400 bg-white">Log in with social</span>
                 </div>
 
-                <button type="button"
+                <!-- <button type="button"
                   class="flex items-center justify-center gap-2 px-8 py-3 text-sm font-semibold text-center text-white transition duration-100 bg-blue-500 rounded-lg outline-none ring-blue-300 hover:bg-blue-600 focus-visible:ring active:bg-blue-700 md:text-base">
                   <icon name="ic:baseline-facebook" class="w-5 h-5 shrink-0" />
                   Continue with Facebook
-                </button>
+                </button> -->
 
-                <button type="button"
+                <button type="button" @click="signInWithGoogleAccount"
                   class="flex items-center justify-center gap-2 px-8 py-3 text-sm font-semibold text-center text-gray-800 transition duration-100 bg-white border border-gray-300 rounded-lg outline-none ring-gray-300 hover:bg-gray-100 focus-visible:ring active:bg-gray-200 md:text-base">
                   <icon name="logos:google-icon" class="w-5 h-5 shrink-0" />
                   Continue with Google
@@ -60,17 +52,25 @@
 </template>
 
 <script setup>
-import { FormKitSchema } from "@formkit/vue";
-// import schema from '@/dynamic-forms/dynamic-inputs'
+import schema from '@/dynamic-forms/dynamic-inputs'
+
+const store = useAuthStore()
 
 const data = reactive({
   email: '',
   password: ''
 });
 
-const register = () => {
-  console.log('hello world!')
-  console.log(email.value)
-  console.log(password.value)
-}
+const signIn = () => {
+  store.userSignIn({
+    email: data.email,
+    password: data.password,
+  });
+};
+
+const signInWithGoogleAccount = () => {
+  store.signInWithGoogle({
+    email: data.email,
+  });
+};
 </script>

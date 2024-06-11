@@ -2,7 +2,7 @@
   <div>
     <main class="relative h-full overflow-hidden bg-white">
       <div class="relative flex items-center overflow-hidden bg-white">
-        <div class="container relative flex px-6 py-16 mx-auto">
+        <div class="container relative flex max-w-full px-4 px-6 py-6 py-16 mx-auto sm:px-6 lg:px-8">
           <div class="relative flex flex-col sm:w-2/3 lg:w-2/5">
             <span class="w-20 h-2 mb-12 bg-gray-800 dark:bg-white"> </span>
             <h1 class="font-bebas-neue text-md sm:text-md font-black flex flex-col leading-none text-[#df6951]">
