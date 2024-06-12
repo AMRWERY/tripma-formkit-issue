@@ -21,9 +21,9 @@
 
             <!-- nav - start -->
             <div>
-              <div class="mb-4 font-bold tracking-widest text-gray-800">Company</div>
+              <nuxt-link to="#" class="font-bold tracking-widest text-gray-800">Company</nuxt-link>
 
-              <nav class="flex flex-col gap-4">
+              <nav class="flex flex-col gap-4 mt-4">
                 <div>
                   <nuxt-link to="#"
                     class="text-gray-500 transition duration-100 hover:text-indigo-500 active:text-indigo-600">About</nuxt-link>
@@ -44,9 +44,9 @@
 
             <!-- nav - start -->
             <div>
-              <div class="mb-4 font-bold tracking-widest text-gray-800">Contact</div>
+              <nuxt-link to="#" class="font-bold tracking-widest text-gray-800">Contact</nuxt-link>
 
-              <nav class="flex flex-col gap-4">
+              <nav class="flex flex-col gap-4 mt-4">
                 <div>
                   <nuxt-link to="#"
                     class="text-gray-500 transition duration-100 hover:text-indigo-500 active:text-indigo-600">Help /
@@ -68,9 +68,9 @@
 
             <!-- nav - start -->
             <div>
-              <div class="mb-4 font-bold tracking-widest text-gray-800">More</div>
+              <nuxt-link to="#" class="font-bold tracking-widest text-gray-800">More</nuxt-link>
 
-              <nav class="flex flex-col gap-4">
+              <nav class="flex flex-col gap-4 mt-4">
                 <div>
                   <nuxt-link to="#"
                     class="text-gray-500 transition duration-100 hover:text-indigo-500 active:text-indigo-600">Airlinefees</nuxt-link>
@@ -94,7 +94,8 @@
             <div>
               <div class="px-4 mx-auto max-w-screen-2xl md:px-8">
                 <div class="flex flex-col items-center max-w-xl mx-auto text-center">
-                  <p class="font-semibold text-indigo-500 md:text-lg xl:text-xl whitespace-nowrap">Discover our app</p>
+                  <p class="font-semibold text-indigo-500 md:text-lg xl:text-xl whitespace-nowrap ms-3">Discover our app
+                  </p>
                   <div class="flex flex-col w-full gap-2.5">
                     <nuxt-link to="#" type="button"
                       class="flex items-center justify-center w-48 mt-3 text-white bg-black h-14 rounded-xl">
