@@ -7,7 +7,7 @@
         </nuxt-link>
         <div class="flex items-center">
           <nav class="items-center hidden text-lg text-gray-800 font-sen lg:flex">
-            <nuxt-link to="#" class="flex px-6 py-2">Destinations</nuxt-link>
+            <nuxt-link to="/destinations" class="flex px-6 py-2">Destinations</nuxt-link>
             <nuxt-link to="#" class="flex px-6 py-2">Hotels</nuxt-link>
             <nuxt-link to="#" class="flex px-6 py-2">Flights</nuxt-link>
             <nuxt-link to="#" class="flex px-6 py-2">Bookings</nuxt-link>
@@ -27,7 +27,7 @@
     </header>
     <transition name="menu-fade">
       <div v-if="isMenuOpen" class="px-6 py-4 space-y-2 bg-white shadow-md lg:hidden">
-        <nuxt-link to="/" class="block py-2">Destinations</nuxt-link>
+        <nuxt-link to="/destinations" class="block py-2">Destinations</nuxt-link>
         <nuxt-link to="#" class="block py-2">Hotels</nuxt-link>
         <nuxt-link to="#" class="block py-2">Flights</nuxt-link>
         <nuxt-link to="#" class="block py-2">Bookings</nuxt-link>

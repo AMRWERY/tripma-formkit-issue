@@ -10,6 +10,7 @@ export default defineNuxtConfig({
     "nuxt-icon",
     "@vueuse/nuxt",
     "@stefanobartoletti/nuxt-social-share",
+    "vue3-carousel-nuxt",
   ],
   tailwindcss: {
     cssPath: ["~/assets/css/tailwind.css", { injectPosition: "first" }],
@@ -37,6 +38,9 @@ export default defineNuxtConfig({
   formkit: {
     autoImport: true,
     configFile: "./plugins/formkit.config.js",
+  },
+  carousel: {
+    prefix: "MyPrefix",
   },
   css: ["~/assets/css/main.css", "~/assets/css/google-fonts.css"],
   components: [
