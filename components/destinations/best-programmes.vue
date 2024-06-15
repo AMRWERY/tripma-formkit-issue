@@ -18,7 +18,7 @@
       <Carousel v-bind="settings" :breakpoints="breakpoints" :wrap-around="true" :autoplay="3500" :transition="500">
         <Slide v-for="offer in store.places" :key="offer">
           <div class="carousel__item">
-            <div
+            <nuxt-link :to="'/destinations/best-programmes/' + offer.id"
               class="mx-auto overflow-hidden duration-300 transform bg-white rounded-lg shadow-md mt-11 w-80 dark:bg-slate-800 hover:scale-105 hover:shadow-lg text-start">
               <img class="object-cover object-center w-full h-64" :src="offer.cover" />
               <div class="p-4">
@@ -42,7 +42,7 @@
                   <rating />
                 </div>
               </div>
-            </div>
+            </nuxt-link>
           </div>
         </Slide>
         <template #addons>
