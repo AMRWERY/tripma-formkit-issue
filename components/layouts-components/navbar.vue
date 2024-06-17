@@ -15,7 +15,8 @@
             <nuxt-link to="/auth/sign-up" v-if="!isAuthenticated"
               class="flex items-center px-6 py-2 text-gray-800 transition border border-gray-800 rounded hover:bg-gray-800 hover:text-white">Sign
               up</nuxt-link>
-            <nuxt-link to="" role="button" v-if="isAuthenticated" @click="logout" class="flex items-center px-6 py-2 text-gray-800 transition">
+            <nuxt-link to="" role="button" v-if="isAuthenticated" @click="logout"
+              class="flex items-center px-6 py-2 text-gray-800 transition">
               <icon name="mdi:logout" size="30px" />
             </nuxt-link>
           </nav>
@@ -36,12 +37,16 @@
           <nuxt-link to="/auth/sign-up" v-if="!isAuthenticated"
             class="px-4 py-2 text-gray-800 transition border border-gray-800 rounded hover:bg-gray-800 hover:text-white">Sign
             up</nuxt-link>
-          <nuxt-link to="" role="button" v-if="isAuthenticated" @click="logout" class="px-6 py-2 text-gray-800 transition">
+          <nuxt-link to="" role="button" v-if="isAuthenticated" @click="logout"
+            class="px-6 py-2 text-gray-800 transition">
             <icon name="mdi:logout" size="30px" />
           </nuxt-link>
         </div>
       </div>
     </transition>
+
+    <!-- overlay -->
+    <Overlay :visible="showOverlay" />
   </div>
 </template>
 
@@ -49,28 +54,32 @@
 const store = useAuthStore()
 
 const isMenuOpen = ref(false)
+const showOverlay = ref(false);
 
 const toggleMenu = () => {
   isMenuOpen.value = !isMenuOpen.value
 }
 
-const logout = () => {
+const logout = async () => {
   try {
-    store.logout();
+    showOverlay.value = true;
+    await store.logout();
     setTimeout(() => {
-      location.reload();
-    }, 1000);
+      showOverlay.value = false;
+      navigateTo('/auth/login');
+    }, 3000);
   } catch (error) {
     console.log(error);
+    showOverlay.value = false;
   }
 }
 
 const isAuthenticated = computed(() => {
-    if (typeof sessionStorage !== 'undefined') {
-        return sessionStorage.getItem('isAuthenticated') === 'true';
-    } else {
-        return false;
-    }
+  if (typeof sessionStorage !== 'undefined') {
+    return sessionStorage.getItem('isAuthenticated') === 'true';
+  } else {
+    return false;
+  }
 });
 </script>
 
