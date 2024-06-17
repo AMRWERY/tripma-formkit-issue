@@ -16,8 +16,14 @@
                   <FormKitSchema :schema="schema" />
                 </div>
 
-                <button type="submit"
-                  class="block px-8 py-3 text-sm font-semibold text-center text-white transition duration-100 bg-gray-800 rounded-lg outline-none ring-gray-300 hover:bg-gray-700 focus-visible:ring active:bg-gray-600 md:text-base">Login</button>
+                <button type="submit" :disabled="loading"
+                  class="block px-8 py-3 text-sm font-semibold text-center text-white transition duration-100 bg-gray-800 rounded-lg outline-none ring-gray-300 hover:bg-gray-700 focus-visible:ring active:bg-gray-600 md:text-base">
+                  <div v-if="loading">
+                    <span class="me-2">Loading...</span>
+                    <icon name="svg-spinners:270-ring-with-bg" />
+                  </div>
+                  <span v-else>Login</span>
+                </button>
 
                 <div class="relative flex items-center justify-center">
                   <span class="absolute inset-x-0 h-px bg-gray-300"></span>
@@ -61,11 +67,19 @@ const data = reactive({
   password: ''
 });
 
+const loading = ref(false);
+
 const signIn = () => {
-  store.userSignIn({
-    email: data.email,
-    password: data.password,
-  });
+  loading.value = true;
+
+  setTimeout(() => {
+    store.userSignIn({
+      email: data.email,
+      password: data.password,
+    }).finally(() => {
+      loading.value = false;
+    });
+  }, 3000);
 };
 
 const signInWithGoogleAccount = () => {
