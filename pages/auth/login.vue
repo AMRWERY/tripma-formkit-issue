@@ -71,7 +71,6 @@ const loading = ref(false);
 
 const signIn = () => {
   loading.value = true;
-
   setTimeout(() => {
     store.userSignIn({
       email: data.email,
