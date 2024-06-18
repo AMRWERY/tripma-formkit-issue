@@ -38,6 +38,9 @@
         </div>
       </div>
     </div>
+
+    <!-- Alert Component -->
+    <alert :showAlert="showAlert" @closeAlert="closeAlert" :message="alertMessage" />
   </div>
 </template>
 
@@ -51,15 +54,31 @@ const data = reactive({
 });
 
 const loading = ref(false);
+const showAlert = ref(false);
+const alertMessage = ref('Your password has been reset successfully, please check your email');
 
-const resetPassword = () => {
+const closeAlert = () => {
+  showAlert.value = false;
+};
+
+const resetPassword = async () => {
   loading.value = true;
-  setTimeout(() => {
-    store.resetUserPassword({
-      email: data.email,
-    }).finally(() => {
-      loading.value = false;
-    });
-  }, 3000);
+  try {
+    await store.resetUserPassword({ email: data.email });
+    showAlert.value = true;
+    alertMessage.value = 'Your password has been reset successfully, please check your email';
+    setTimeout(() => {
+      showAlert.value = false;
+    }, 3000);
+  } catch (error) {
+    alertMessage.value = 'An error occurred while resetting your password. Please try again.';
+    showAlert.value = true;
+    setTimeout(() => {
+      showAlert.value = false;
+    }, 3000);
+    console.error(error);
+  } finally {
+    loading.value = false;
+  }
 };
 </script>
