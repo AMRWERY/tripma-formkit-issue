@@ -1,4 +1,4 @@
-const schema = [
+const loginSchema = [
   {
     $formkit: "email",
     name: "email",
@@ -19,4 +19,44 @@ const schema = [
   },
 ];
 
-export default schema;
+const registrationSchema = [
+  {
+    $formkit: "text",
+    name: "firstName",
+    label: "First Name",
+    validation: "required",
+    outerClass:
+      "px-3 py-2 text-gray-800 transition duration-100 rounded ring-indigo-300 focus:ring",
+    innerClass: "outline-none bg-gray-50 border w-full",
+  },
+  {
+    $formkit: "text",
+    name: "lastName",
+    label: "Last Name",
+    validation: "required",
+    outerClass:
+      "px-3 py-2 text-gray-800 transition duration-100 rounded ring-indigo-300 focus:ring",
+    innerClass: "outline-none bg-gray-50 border w-full",
+  },
+  {
+    $formkit: "email",
+    name: "email",
+    label: "Email",
+    validation: "required|email",
+    outerClass:
+      "px-3 py-2 text-gray-800 transition duration-100 rounded ring-indigo-300 focus:ring",
+    innerClass: "outline-none bg-gray-50 border w-full",
+  },
+  {
+    $formkit: "password",
+    name: "password",
+    label: "Password",
+    validation: "required|length:6,8",
+    outerClass:
+      "relative px-3 py-2 text-gray-800 transition duration-100 rounded ring-indigo-300 focus:ring",
+    innerClass: "outline-none bg-gray-50 border w-full pr-10",
+    showPasswordToggle: true,
+  },
+];
+
+export { loginSchema, registrationSchema };

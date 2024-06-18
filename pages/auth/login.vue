@@ -7,13 +7,13 @@
       <div class="absolute inset-0 flex flex-col items-center justify-center">
         <div class="w-full max-w-md py-2 mx-auto bg-white rounded-2xl">
           <div class="mx-auto max-w-screen-2xl">
-            <h2 class="mb-4 text-2xl font-bold text-center text-gray-800 md:mb-8 lg:text-3xl">Login</h2>
+            <h2 class="mb-4 text-2xl font-bold text-center text-gray-800 md:mb-4 lg:text-3xl">Login</h2>
 
             <FormKit type="form" id="login-form" v-model="data" :actions="false" :incomplete-message="false"
               @submit="signIn" class="max-w-lg mx-auto">
               <div class="flex flex-col gap-4 p-4">
                 <div>
-                  <FormKitSchema :schema="schema" />
+                  <FormKitSchema :schema="loginSchema" />
                 </div>
 
                 <button type="submit" :disabled="loading"
@@ -45,7 +45,7 @@
 
               <div class="flex items-center justify-center p-4 bg-gray-100">
                 <p class="text-sm text-center text-gray-500">Don't have an account?
-                  <nuxt-link to="#"
+                  <nuxt-link to="/auth/sign-up"
                     class="text-indigo-500 transition duration-100 hover:text-indigo-600 active:text-indigo-700">Register</nuxt-link>
                 </p>
               </div>
@@ -58,7 +58,7 @@
 </template>
 
 <script setup>
-import schema from '@/dynamic-forms/dynamic-inputs'
+import { loginSchema } from '@/dynamic-forms/dynamic-inputs'
 
 const store = useAuthStore()
 

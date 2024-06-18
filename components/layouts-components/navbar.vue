@@ -26,6 +26,7 @@
         </div>
       </div>
     </header>
+
     <transition name="menu-fade">
       <div v-if="isMenuOpen" class="px-6 py-4 space-y-2 bg-white shadow-md lg:hidden">
         <nuxt-link to="/destinations" class="block py-2">Destinations</nuxt-link>
@@ -35,11 +36,12 @@
         <div class="mt-2">
           <nuxt-link to="/auth/login" v-if="!isAuthenticated" class="py-2 pe-4">Login</nuxt-link>
           <nuxt-link to="/auth/sign-up" v-if="!isAuthenticated"
-            class="px-4 py-2 text-gray-800 transition border border-gray-800 rounded hover:bg-gray-800 hover:text-white">Sign
-            up</nuxt-link>
-          <nuxt-link to="" role="button" v-if="isAuthenticated" @click="logout"
-            class="px-6 py-2 text-gray-800 transition">
-            <icon name="mdi:logout" size="30px" />
+            class="px-4 py-2 text-gray-800 transition border border-gray-800 rounded hover:bg-gray-800 hover:text-white">
+            Sign up
+          </nuxt-link>
+          <nuxt-link to="#" role="button" v-if="isAuthenticated" @click="logout"
+            class="inline-flex items-center px-6 py-2 text-gray-800 transition border border-gray-800 rounded hover:bg-gray-800 hover:text-white">
+            Logout
           </nuxt-link>
         </div>
       </div>
