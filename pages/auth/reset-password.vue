@@ -40,7 +40,7 @@
     </div>
 
     <!-- Alert Component -->
-    <alert :showAlert="showAlert" @closeAlert="closeAlert" :message="alertMessage" />
+    <successfully-alert :showAlert="showAlert" @closeAlert="closeAlert" :message="alertMessage" />
   </div>
 </template>
 
