@@ -14,7 +14,7 @@
               Park gate<br> sell that west hard for the
             </p>
             <div class="flex mt-8">
-              <nuxt-link to="#"
+              <nuxt-link to="/destinations"
                 class="py-3 px-4 rounded-lg bg-[#f1a501] border-2 border-transparent text-white text-md mr-4 hover:bg-pink-400">
                 Find out more
               </nuxt-link>
