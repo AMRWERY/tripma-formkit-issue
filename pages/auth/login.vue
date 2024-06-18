@@ -49,6 +49,14 @@
                     class="text-indigo-500 transition duration-100 hover:text-indigo-600 active:text-indigo-700">Register</nuxt-link>
                 </p>
               </div>
+
+              <div class="flex items-center justify-center p-4 bg-gray-100">
+                <p class="text-sm text-center text-gray-500">
+                  <nuxt-link to="/auth/reset-password"
+                    class="text-indigo-500 transition duration-100 hover:text-indigo-600 active:text-indigo-700">Forget
+                    Password</nuxt-link>
+                </p>
+              </div>
             </FormKit>
           </div>
         </div>

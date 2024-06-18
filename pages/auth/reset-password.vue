@@ -1,0 +1,65 @@
+<template>
+  <div>
+    <div class="relative w-full h-screen">
+      <img src="https://justfields.com/storage/projects/7M5rV059/Header.png"
+        class="absolute inset-0 object-cover w-full h-full">
+      <div class="absolute inset-0 bg-black bg-opacity-50"></div>
+      <div class="absolute inset-0 flex flex-col items-center justify-center">
+        <div class="w-full max-w-md py-2 mx-auto bg-white rounded-2xl">
+          <div class="mx-auto max-w-screen-2xl">
+            <h2 class="mb-4 text-2xl font-bold text-center text-gray-800 md:mb-4 lg:text-3xl">Reset Password</h2>
+
+            <FormKit type="form" id="reset-password-form" v-model="data" :actions="false" :incomplete-message="false"
+              @submit="resetPassword" class="max-w-lg mx-auto">
+              <div class="flex flex-col gap-4 p-4">
+                <div>
+                  <FormKitSchema :schema="resetPasswordSchema" />
+                </div>
+
+                <button type="submit" :disabled="loading"
+                  class="block px-8 py-3 text-sm font-semibold text-center text-white transition duration-100 bg-gray-800 rounded-lg outline-none ring-gray-300 hover:bg-gray-700 focus-visible:ring active:bg-gray-600 md:text-base">
+                  <div v-if="loading">
+                    <span class="me-2">Loading...</span>
+                    <icon name="svg-spinners:270-ring-with-bg" />
+                  </div>
+                  <span v-else>Reset</span>
+                </button>
+              </div>
+
+              <div class="flex items-center justify-center p-4 bg-gray-100">
+                <p class="text-sm text-center text-gray-500">
+                  <nuxt-link to="/auth/login"
+                    class="text-indigo-500 transition duration-100 hover:text-indigo-600 active:text-indigo-700">Back to
+                    Login</nuxt-link>
+                </p>
+              </div>
+            </FormKit>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</template>
+
+<script setup>
+import { resetPasswordSchema } from '@/dynamic-forms/dynamic-inputs'
+
+const store = useAuthStore()
+
+const data = reactive({
+  email: '',
+});
+
+const loading = ref(false);
+
+const resetPassword = () => {
+  loading.value = true;
+  setTimeout(() => {
+    store.resetUserPassword({
+      email: data.email,
+    }).finally(() => {
+      loading.value = false;
+    });
+  }, 3000);
+};
+</script>
