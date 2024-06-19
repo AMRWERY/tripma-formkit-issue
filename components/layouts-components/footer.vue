@@ -43,19 +43,14 @@
 
               <nav class="flex flex-col gap-4 mt-4">
                 <div>
+                  <nuxt-link to="/contact-us"
+                    class="text-gray-500 transition duration-100 hover:text-indigo-500 active:text-indigo-600">Contact Us</nuxt-link>
+                </div>
+                
+                <div>
                   <nuxt-link to="/f-a-q"
                     class="text-gray-500 transition duration-100 hover:text-indigo-500 active:text-indigo-600">Help /
                     FAQ</nuxt-link>
-                </div>
-
-                <div>
-                  <nuxt-link to="#"
-                    class="text-gray-500 transition duration-100 hover:text-indigo-500 active:text-indigo-600">Press</nuxt-link>
-                </div>
-
-                <div>
-                  <nuxt-link to="#"
-                    class="text-gray-500 transition duration-100 hover:text-indigo-500 active:text-indigo-600">Affilates</nuxt-link>
                 </div>
               </nav>
             </div>
