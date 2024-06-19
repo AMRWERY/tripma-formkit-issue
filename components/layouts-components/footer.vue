@@ -25,18 +25,13 @@
 
               <nav class="flex flex-col gap-4 mt-4">
                 <div>
+                  <nuxt-link to="/blogs"
+                    class="text-gray-500 transition duration-100 hover:text-indigo-500 active:text-indigo-600">Blogs</nuxt-link>
+                </div>
+
+                <div>
                   <nuxt-link to="/about"
                     class="text-gray-500 transition duration-100 hover:text-indigo-500 active:text-indigo-600">About</nuxt-link>
-                </div>
-
-                <div>
-                  <nuxt-link to="#"
-                    class="text-gray-500 transition duration-100 hover:text-indigo-500 active:text-indigo-600">Careers</nuxt-link>
-                </div>
-
-                <div>
-                  <nuxt-link to="#"
-                    class="text-gray-500 transition duration-100 hover:text-indigo-500 active:text-indigo-600">Mobile</nuxt-link>
                 </div>
               </nav>
             </div>
