@@ -2,8 +2,8 @@
   <div>
     <section class="px-4 py-6 mx-auto max-w-7xl sm:px-6 lg:px-8">
       <div class="text-center">
-        <p class="text-[#5e6282] mb-3">Top Selling</p>
-        <strong class="font-semibold lg:text-2xl sm:text-lg md:text-xl">Top Destinations</strong>
+        <p class="text-[#5e6282] mb-3">{{ $t('home.top_selling') }}</p>
+        <strong class="font-semibold lg:text-2xl sm:text-lg md:text-xl">{{ $t('home.top_destinations') }}</strong>
         <div class="max-w-2xl mx-auto lg:max-w-none">
           <div class="mt-6 space-y-12 lg:grid lg:grid-cols-3 lg:gap-x-6 lg:space-y-0">
             <div v-for="card in cards" :key="card" class="relative group">
@@ -16,11 +16,11 @@
                   <h3 class="text-lg text-gray-700">
                     <nuxt-link to="">
                       <span aria-hidden="true" class="absolute inset-0" />
-                      {{ card.title }}
+                      {{ $t(card.title) }}
                     </nuxt-link>
                   </h3>
                   <p class="mt-1 text-sm text-gray-500">
-                    <icon name="mdi:navigation-variant" size="22" /> {{ card.duration }} days trip
+                    <icon name="mdi:navigation-variant" size="22" /> {{ card.duration }} {{ $t('home.days_trip') }}
                   </p>
                 </div>
                 <p class="mt-0.5 font-semibold text-gray-900 text-md">${{ card.price }}</p>
@@ -35,8 +35,8 @@
 
 <script setup>
 const cards = ref([
-  { title: 'Rome, Italy', price: '5,42k', duration: '10', img: 'https://justfields.com/storage/projects/7M5rV059/rome.jpg' },
-  { title: 'London, UK', price: '4,2k', duration: '12', img: 'https://justfields.com/storage/projects/7M5rV059/london.jpg' },
-  { title: 'Paris, France', price: '6,21k', duration: '11', img: 'https://justfields.com/storage/projects/7M5rV059/paris.jpg' },
+  { title: 'home.rome_italy', price: '5,42k', duration: '10', img: 'https://justfields.com/storage/projects/7M5rV059/rome.jpg' },
+  { title: 'home.london_uk', price: '4,2k', duration: '12', img: 'https://justfields.com/storage/projects/7M5rV059/london.jpg' },
+  { title: 'home.paris_france', price: '6,21k', duration: '11', img: 'https://justfields.com/storage/projects/7M5rV059/paris.jpg' },
 ])
 </script>

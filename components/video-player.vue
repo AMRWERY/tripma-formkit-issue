@@ -5,7 +5,7 @@
         class="px-3 py-3 text-white bg-pink-500 rounded-full hover:bg-pink-600 text-md">
         <icon name="fluent-mdl2:play-solid" />
       </button>
-      <p class="mt-3 ms-3">Play Demo</p>
+      <p class="mt-3 ms-3">{{ $t('home.play_demo') }}</p>
     </div>
 
     <HeadlessTransitionRoot appear :show="isOpen" as="template">

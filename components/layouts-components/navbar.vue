@@ -7,14 +7,28 @@
         </nuxt-link>
         <div class="flex items-center">
           <nav class="items-center hidden text-lg text-gray-800 font-sen lg:flex">
-            <nuxt-link to="/destinations" class="flex px-6 py-2">Destinations</nuxt-link>
-            <nuxt-link to="/hotels" class="flex px-6 py-2">Hotels</nuxt-link>
-            <nuxt-link to="#" class="flex px-6 py-2">Flights</nuxt-link>
-            <nuxt-link to="#" class="flex px-6 py-2">Bookings</nuxt-link>
-            <nuxt-link to="/auth/login" v-if="!isAuthenticated" class="flex px-6 py-2">Login</nuxt-link>
+            <nuxt-link to="/destinations" class="flex px-6 py-2">{{ $t('layout.destinations') }}</nuxt-link>
+            <nuxt-link to="/hotels" class="flex px-6 py-2">{{ $t('layout.hotels') }}</nuxt-link>
+            <nuxt-link to="#" class="flex px-6 py-2">{{ $t('layout.flights') }}</nuxt-link>
+            <nuxt-link to="#" class="flex px-6 py-2">{{ $t('layout.bookings') }}</nuxt-link>
+            <!-- Toggle Language -->
+            <nuxt-link class="me-4 text-neutral-600 dark:text-white" to="" role="button" v-if="isRTL"
+              @click="updateLocale('en')">
+              <span class="[&>svg]:w-5">
+                En
+              </span>
+            </nuxt-link>
+            <nuxt-link class="me-4 text-neutral-600 dark:text-white" to="" role="button" v-else
+              @click="updateLocale('ar')">
+              <span class="[&>svg]:w-5">
+                العربية
+              </span>
+            </nuxt-link>
+            <nuxt-link to="/auth/login" v-if="!isAuthenticated" class="flex px-6 py-2">{{ $t('layout.login')
+              }}</nuxt-link>
             <nuxt-link to="/auth/sign-up" v-if="!isAuthenticated"
-              class="flex items-center px-6 py-2 text-gray-800 transition border border-gray-800 rounded hover:bg-gray-800 hover:text-white">Sign
-              up</nuxt-link>
+              class="flex items-center px-6 py-2 text-gray-800 transition border border-gray-800 rounded hover:bg-gray-800 hover:text-white">{{
+                $t('layout.sign_up') }}</nuxt-link>
             <nuxt-link to="" role="button" v-if="isAuthenticated" @click="logout"
               class="flex items-center px-6 py-2 text-gray-800 transition">
               <icon name="mdi:logout" size="30px" />
@@ -29,19 +43,31 @@
 
     <transition name="menu-fade">
       <div v-if="isMenuOpen" class="px-6 py-4 space-y-2 bg-white shadow-md lg:hidden">
-        <nuxt-link to="/destinations" class="block py-2">Destinations</nuxt-link>
-        <nuxt-link to="/hotels" class="block py-2">Hotels</nuxt-link>
-        <nuxt-link to="#" class="block py-2">Flights</nuxt-link>
-        <nuxt-link to="#" class="block py-2">Bookings</nuxt-link>
+        <nuxt-link to="/destinations" class="block py-2">{{ $t('layout.destinations') }}</nuxt-link>
+        <nuxt-link to="/hotels" class="block py-2">{{ $t('layout.hotels') }}</nuxt-link>
+        <nuxt-link to="#" class="block py-2">{{ $t('layout.flights') }}</nuxt-link>
+        <nuxt-link to="#" class="block py-2">{{ $t('layout.bookings') }}</nuxt-link>
+        <!-- Toggle Language -->
+        <nuxt-link class="me-4 text-neutral-600 dark:text-white" to="" role="button" v-if="isRTL"
+          @click="updateLocale('en')">
+          <span class="[&>svg]:w-5">
+            En
+          </span>
+        </nuxt-link>
+        <nuxt-link class="me-4 text-neutral-600 dark:text-white" to="" role="button" v-else @click="updateLocale('ar')">
+          <span class="[&>svg]:w-5">
+            العربية
+          </span>
+        </nuxt-link>
         <div class="mt-2">
-          <nuxt-link to="/auth/login" v-if="!isAuthenticated" class="py-2 pe-4">Login</nuxt-link>
+          <nuxt-link to="/auth/login" v-if="!isAuthenticated" class="py-2 pe-4">{{ $t('layout.login') }}</nuxt-link>
           <nuxt-link to="/auth/sign-up" v-if="!isAuthenticated"
-            class="px-4 py-2 text-gray-800 transition border border-gray-800 rounded hover:bg-gray-800 hover:text-white">
-            Sign up
+            class="px-4 py-2 text-gray-800 transition border border-gray-800 rounded hover:bg-gray-800 hover:text-white ms-4">
+            {{ $t('layout.sign_up') }}
           </nuxt-link>
           <nuxt-link to="#" role="button" v-if="isAuthenticated" @click="logout"
             class="inline-flex items-center px-6 py-2 text-gray-800 transition border border-gray-800 rounded hover:bg-gray-800 hover:text-white">
-            Logout
+            {{ $t('layout.logout') }}
           </nuxt-link>
         </div>
       </div>
@@ -68,8 +94,9 @@ const logout = async () => {
     await store.logout();
     setTimeout(() => {
       showOverlay.value = false;
-      navigateTo('/auth/login');
+      location.reload();
     }, 3000);
+    navigateTo('/auth/login');
   } catch (error) {
     console.log(error);
     showOverlay.value = false;
@@ -81,6 +108,26 @@ const isAuthenticated = computed(() => {
     return sessionStorage.getItem('isAuthenticated') === 'true';
   } else {
     return false;
+  }
+});
+
+const { locale, setLocale } = useI18n();
+
+const updateLocale = (value) => {
+  setLocale(value);
+  localStorage.setItem("locale", value);
+};
+
+const isRTL = ref(false);
+
+watch(locale, (newVal) => {
+  isRTL.value = newVal === 'ar';
+});
+
+onMounted(() => {
+  const storedLocale = localStorage.getItem("locale");
+  if (storedLocale) {
+    setLocale(storedLocale);
   }
 });
 </script>
