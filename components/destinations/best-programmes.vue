@@ -7,8 +7,10 @@
             <div class="flex min-w-0 gap-x-4">
               <icon name="ic:outline-location-on" class="flex-none w-10 h-10 rounded-full bg-gray-50 text-[#409ae9]" />
               <div class="flex-auto min-w-0">
-                <p class="text-sm font-semibold leading-6 text-gray-900">Best Tourist Programs</p>
-                <p class="mt-1 text-xs leading-5 text-gray-500 truncate">Choose the most suitable tourist program</p>
+                <p class="text-sm font-semibold leading-6 text-gray-900">{{ $t('destinations.best_tourist_programs') }}
+                </p>
+                <p class="mt-1 text-xs leading-5 text-gray-500 truncate">{{
+                  $t('destinations.choose_the_most_suitable_tourist_program') }}</p>
               </div>
             </div>
           </li>

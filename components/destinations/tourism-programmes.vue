@@ -9,8 +9,8 @@
                 <icon name="ic:outline-location-on"
                   class="flex-none w-10 h-10 rounded-full bg-gray-50 text-[#409ae9]" />
                 <div class="flex-auto min-w-0">
-                  <p class="text-sm font-semibold leading-6 text-gray-900">Tourism Programs</p>
-                  <p class="mt-1 text-xs leading-5 text-gray-500 truncate">Choose your favourite tourist destination</p>
+                  <p class="text-sm font-semibold leading-6 text-gray-900">{{ $t('destinations.tourism_programs') }}</p>
+                  <p class="mt-1 text-xs leading-5 text-gray-500 truncate">{{ $t('destinations.choose_your_favourite_tourist_destination') }}</p>
                 </div>
               </div>
             </li>
@@ -28,7 +28,7 @@
                 <h2 class="mb-2 text-base font-medium text-gray-700 dark:text-gray-300">
                   {{ offer.smallTitle }}
                 </h2>
-                <p class="ml-auto text-base font-medium font-semibold text-green-500 text-md dark:text-white">
+                <p class="text-base font-medium font-semibold text-green-500 ms-auto text-md dark:text-white">
                   ${{ offer.price }}
                 </p>
               </div>
@@ -36,7 +36,7 @@
                 <p class="mb-2 text-base font-medium text-gray-900 dark:text-white">
                   {{ offer.hotel }}
                 </p>
-                <p class="ml-auto text-base font-medium font-semibold text-green-500 text-md dark:text-white">
+                <p class="mb-2 text-base font-medium font-semibold text-green-500 ms-auto text-md dark:text-white">
                   {{ offer.duration }}
                 </p>
               </div>

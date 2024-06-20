@@ -7,7 +7,7 @@
           @change="filterPlaces">
           <option v-for="filter in filters" :key="filter" :value="filter">{{ filter }}</option>
         </select>
-        <p class="ms-auto">Result: <span class="text-blue-600 underline">{{ store.filteredPlacesArray.length }}</span>
+        <p class="ms-auto">{{ $t('destinations.results') }}: <span class="text-blue-600 underline">{{ store.filteredPlacesArray.length }}</span>
         </p>
       </div>
     </div>

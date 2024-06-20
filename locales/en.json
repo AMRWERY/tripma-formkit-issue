@@ -81,5 +81,15 @@
   },
   "placeholder": {
     "email_address": "Email Address"
+  },
+  "destinations": {
+    "best_tourist_programs": "Best Tourist Programs",
+    "choose_the_most_suitable_tourist_program": "Choose the most suitable tourist program",
+    "show_all": "Show All",
+    "include_car": "Include Car",
+    "not_include_car": "Not Include Car",
+    "results": "Results",
+    "tourism_programs": "Tourism Programs",
+    "choose_your_favourite_tourist_destination": "Choose your favourite tourist destination"
   }
 }

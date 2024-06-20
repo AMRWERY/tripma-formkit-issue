@@ -81,5 +81,15 @@
   },
   "placeholder": {
     "email_address": "عنوان البريد الإلكتروني"
+  },
+  "destinations": {
+    "best_tourist_programs": "أفضل البرامج السياحية",
+    "choose_the_most_suitable_tourist_program": "اختر البرنامج السياحي الأنسب",
+    "show_all": "عرض الكل",
+    "include_car": "تضمين السيارة",
+    "not_include_car": "عدم تضمين السيارة",
+    "results": "النتائج",
+    "tourism_programs": "برامج السياحة",
+    "choose_your_favourite_tourist_destination": "اختر وجهتك السياحية المفضلة"
   }
 }
