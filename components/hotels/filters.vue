@@ -9,8 +9,8 @@
       </div>
 
       <div>
-        <div class="bg-white rounded-lg shadow-lg">
-          <div class="p-6">
+        <div class="bg-white rounded-lg shadow-2xl">
+          <div class="p-4">
             <div class="grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-4">
               <div class="relative">
                 <div class="p-4 text-center bg-gray-100">
