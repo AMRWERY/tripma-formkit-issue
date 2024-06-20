@@ -42,6 +42,9 @@ export default defineNuxtConfig({
   carousel: {
     prefix: "MyPrefix",
   },
+  build: {
+    transpile: ["@vuepic/vue-datepicker"],
+  },
   css: ["~/assets/css/main.css", "~/assets/css/google-fonts.css"],
   components: [
     {
