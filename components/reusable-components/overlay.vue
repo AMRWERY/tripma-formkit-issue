@@ -3,7 +3,7 @@
     <div v-if="visible" class="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-75">
       <div class="flex items-center justify-center">
         <div class="flex justify-center text-5xl text-white align-center">
-          <div>{{ message }}</div>
+          <div>{{ translatedMessage }}</div>
           <icon name="svg-spinners:blocks-scale" class="mt-5 ms-2" />
         </div>
       </div>
@@ -19,8 +19,14 @@ const props = defineProps({
   },
   message: {
     type: String,
-    default: 'Processing...'
+    default: 'alert.processing'
   }
+});
+
+const { t } = useI18n();
+
+const translatedMessage = computed(() => {
+  return t(props.message);
 });
 </script>
 

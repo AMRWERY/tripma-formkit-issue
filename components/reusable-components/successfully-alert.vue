@@ -2,14 +2,14 @@
   <div>
     <transition name="fade">
       <div v-if="showAlert"
-        class="absolute z-50 p-4 leading-normal text-green-600 bg-green-100 rounded-lg shadow-md top-32 right-12 w-96"
+        class="absolute z-50 p-4 leading-normal text-green-600 bg-green-100 rounded-lg shadow-md top-32 end-12 w-96"
         role="alert">
         <div class="flex items-center">
-          <icon name="material-symbols:check-circle-outline" class="w-6 h-6 mr-2 text-yellow-500 fill-current" />
-          <h2 class="text-lg font-semibold">Successfully</h2>
+          <icon name="material-symbols:check-circle-outline" class="w-6 h-6 text-yellow-500 fill-current me-2" />
+          <h2 class="text-lg font-semibold">{{ $t('alert.successfully') }}</h2>
         </div>
         <p class="mt-2">{{ message }}</p>
-        <div class="absolute text-gray-400 cursor-pointer top-4 right-4 hover:text-gray-800" @click="closeAlert">
+        <div class="absolute text-gray-400 cursor-pointer top-4 end-4 hover:text-gray-800" @click="closeAlert">
           <icon name="material-symbols:close" class="w-4 h-4" />
         </div>
       </div>

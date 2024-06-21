@@ -111,5 +111,11 @@
     "already_have_an_account": "Already have an account?",
     "back_to_login": "Back to Login",
     "reset_password": "Reset Password"
+  },
+  "alert": {
+    "successfully": "Successfully",
+    "your_password_has_been_reset_successfully_please_check_your_email": "Your password has been reset successfully, please check your email",
+    "an_error_occurred_while_resetting_your_password_please_try_again": "An error occurred while resetting your password. Please try again.",
+    "processing": "Processing..."
   }
 }

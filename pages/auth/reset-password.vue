@@ -52,7 +52,7 @@ const { t } = useI18n();
 const store = useAuthStore()
 const loading = ref(false);
 const showAlert = ref(false);
-const alertMessage = ref('Your password has been reset successfully, please check your email');
+const alertMessage = ref('alert.your_password_has_been_reset_successfully_please_check_your_email');
 
 const data = reactive({
   email: '',
@@ -67,7 +67,7 @@ const resetPassword = async () => {
   try {
     await store.resetUserPassword({ email: data.email });
     showAlert.value = true;
-    alertMessage.value = 'Your password has been reset successfully, please check your email';
+    alertMessage.value = t('alert.your_password_has_been_reset_successfully_please_check_your_email');
     setTimeout(() => {
       showAlert.value = false;
     }, 3000);
