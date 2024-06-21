@@ -52,7 +52,7 @@ const { t } = useI18n();
 const store = useAuthStore()
 const loading = ref(false);
 const showAlert = ref(false);
-const alertMessage = ref('alert.your_password_has_been_reset_successfully_please_check_your_email');
+const alertMessage = ref('reusable.your_password_has_been_reset_successfully_please_check_your_email');
 
 const data = reactive({
   email: '',
@@ -67,12 +67,12 @@ const resetPassword = async () => {
   try {
     await store.resetUserPassword({ email: data.email });
     showAlert.value = true;
-    alertMessage.value = t('alert.your_password_has_been_reset_successfully_please_check_your_email');
+    alertMessage.value = t('reusable.your_password_has_been_reset_successfully_please_check_your_email');
     setTimeout(() => {
       showAlert.value = false;
     }, 3000);
   } catch (error) {
-    alertMessage.value = 'An error occurred while resetting your password. Please try again.';
+    alertMessage.value = t('reusable.an_error_occurred_while_resetting_your_password_please_try_again');
     showAlert.value = true;
     setTimeout(() => {
       showAlert.value = false;

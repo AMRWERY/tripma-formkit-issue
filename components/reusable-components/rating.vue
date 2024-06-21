@@ -1,6 +1,6 @@
 <template>
   <div class="flex">
-    <span class="sr-only">4 out of 5 stars</span>
+    <span class="sr-only">4 {{ $t('reusable.out_of') }} 5 {{ $t('reusable.stars') }}</span>
     <svg width="24" height="24" fill="currentColor" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"
       stroke-linecap="round" stroke-linejoin="round" xmlns="http://www.w3.org/2000/svg"
       class="w-5 h-5 shrink-0 text-amber-500">

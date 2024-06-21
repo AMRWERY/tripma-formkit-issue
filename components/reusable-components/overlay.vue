@@ -19,7 +19,7 @@ const props = defineProps({
   },
   message: {
     type: String,
-    default: 'alert.processing'
+    default: 'reusable.processing'
   }
 });
 
