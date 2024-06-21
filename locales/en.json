@@ -119,5 +119,20 @@
     "processing": "Processing...",
     "out_of": "out of",
     "stars": "stars"
+  },
+  "blogs": {
+    "this_is_a_section_of_some_simple_filler_text_also_known_as_placeholder_text_it": "This is a section of some simple filler text, also known as placeholder text. It",
+    "shares_some_characteristics_of_a_real_written_text_but_is_random_or_otherwise": "shares some characteristics of a real written text but is random or otherwise",
+    "generated": "generated",
+    "july_19_2024": "July 19, 2024",
+    "new_trends_in_tech": "New trends in Tech",
+    "this_is_a_section_of_some_simple_filler_text_also_known_as_placeholder_text": "This is a section of some simple filler text, also known as placeholder text.",
+    "april_07_2024": "April 07, 2024",
+    "Working_with_legacy_stacks": "Working with legacy stacks",
+    "march_15_2024": "March 15, 2024",
+    "10_best_smartphones_for_devs": "10 best smartphones for devs",
+    "january_27_2024": "January 27, 2024",
+    "8_high_performance_notebooks": "8 High performance Notebooks",
+    "read_more": "Read more"
   }
 }

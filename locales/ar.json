@@ -119,5 +119,20 @@
     "processing": "جارٍ المعالجة...",
     "out_of": "out of",
     "stars": "stars"
+  },
+  "blogs": {
+    "this_is_a_section_of_some_simple_filler_text_also_known_as_placeholder_text_it": "هذا هو قسم من نص بديل بسيط يُعرف أيضًا باسم نص بديل. إنه",
+    "shares_some_characteristics_of_a_real_written_text_but_is_random_or_otherwise": "يشترك في بعض الخصائص مع النص الحقيقي المكتوب ولكنه عشوائي أو غير ذلك",
+    "generated": "تم إنشاؤه",
+    "july_19_2024": "19 يوليو 2024",
+    "new_trends_in_tech": "اتجاهات جديدة في التكنولوجيا",
+    "this_is_a_section_of_some_simple_filler_text_also_known_as_placeholder_text": "هذا قسم من نص بديل بسيط يُعرف أيضًا باسم نص مؤقت.",
+    "april_07_2024": "7 أبريل 2024",
+    "Working_with_legacy_stacks": "العمل مع الأنظمة القديمة",
+    "march_15_2024": "15 مارس 2024",
+    "10_best_smartphones_for_devs": "أفضل 10 هواتف ذكية للمطورين",
+    "january_27_2024": "27 يناير 2024",
+    "8_high_performance_notebooks": "8 دفاتر ملاحظات عالية الأداء",
+    "read_more": "اقرأ المزيد"
   }
 }
