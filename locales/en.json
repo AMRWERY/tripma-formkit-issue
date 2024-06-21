@@ -81,7 +81,8 @@
     "continue_with_facebook": "Continue with Facebook",
     "continue_with_google": "Continue with Google",
     "loading": "Loading",
-    "reset": "Reset"
+    "reset": "Reset",
+    "lets_talk": "Let's talk"
   },
   "placeholder": {
     "email_address": "Email Address"
@@ -110,7 +111,8 @@
     "sign_up_with_social": "Sign up with social",
     "already_have_an_account": "Already have an account?",
     "back_to_login": "Back to Login",
-    "reset_password": "Reset Password"
+    "reset_password": "Reset Password",
+    "message": "Message"
   },
   "reusable": {
     "successfully": "Successfully",
@@ -134,5 +136,12 @@
     "january_27_2024": "January 27, 2024",
     "8_high_performance_notebooks": "8 High performance Notebooks",
     "read_more": "Read more"
+  },
+  "contact_us": {
+    "get_in_touch": "Get in touch",
+    "got_a_technical_issue_want_to_send_feedback": "Got a technical issue? Want to send feedback",
+    "about_a_beta_feature_need_details_about_our": "about a beta feature? Need details about our",
+    "business_plan_let_us_know": "Business plan? Let us know",
+    "from_small_beginnings_come_great_things": "From small beginnings come great things."
   }
 }
