@@ -77,7 +77,11 @@
   },
   "buttons": {
     "find_out_more": "Find out more",
-    "subscribe": "Subscribe"
+    "subscribe": "Subscribe",
+    "continue_with_facebook": "Continue with Facebook",
+    "continue_with_google": "Continue with Google",
+    "loading": "Loading",
+    "reset": "Reset"
   },
   "placeholder": {
     "email_address": "Email Address"
@@ -91,5 +95,21 @@
     "results": "Results",
     "tourism_programs": "Tourism Programs",
     "choose_your_favourite_tourist_destination": "Choose your favourite tourist destination"
+  },
+  "forms": {
+    "login": "Login",
+    "email_address": "Email address",
+    "password": "Password",
+    "log_in_with_social": "Log in with social",
+    "dont_have_an_account": "Don't have an account?",
+    "register": "Register",
+    "forget_password": "Forget Password",
+    "first_name": "First Name",
+    "last_name": "Last Name",
+    "sign_up": "Sign up",
+    "sign_up_with_social": "Sign up with social",
+    "already_have_an_account": "Already have an account?",
+    "back_to_login": "Back to Login",
+    "reset_password": "Reset Password"
   }
 }

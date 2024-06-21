@@ -13,13 +13,13 @@
             <nuxt-link to="#" class="flex px-6 py-2">{{ $t('layout.bookings') }}</nuxt-link>
             <!-- Toggle Language -->
             <nuxt-link class="me-4 text-neutral-600 dark:text-white" to="" role="button" v-if="isRTL"
-              @click="updateLocale('en')">
+              @click="updateLocale('en'); changeLocale('en')">
               <span class="[&>svg]:w-5">
                 En
               </span>
             </nuxt-link>
             <nuxt-link class="me-4 text-neutral-600 dark:text-white" to="" role="button" v-else
-              @click="updateLocale('ar')">
+              @click="updateLocale('ar'); changeLocale('ar')">
               <span class="[&>svg]:w-5">
                 العربية
               </span>
@@ -49,12 +49,13 @@
         <nuxt-link to="#" class="block py-2">{{ $t('layout.bookings') }}</nuxt-link>
         <!-- Toggle Language -->
         <nuxt-link class="me-4 text-neutral-600 dark:text-white" to="" role="button" v-if="isRTL"
-          @click="updateLocale('en')">
+          @click="updateLocale('en'); changeLocale('en')">
           <span class="[&>svg]:w-5">
             En
           </span>
         </nuxt-link>
-        <nuxt-link class="me-4 text-neutral-600 dark:text-white" to="" role="button" v-else @click="updateLocale('ar')">
+        <nuxt-link class="me-4 text-neutral-600 dark:text-white" to="" role="button" v-else
+          @click="updateLocale('ar'); changeLocale('ar')">
           <span class="[&>svg]:w-5">
             العربية
           </span>
@@ -79,6 +80,8 @@
 </template>
 
 <script setup>
+import { changeLocale } from '@formkit/vue'
+
 const store = useAuthStore()
 
 const isMenuOpen = ref(false)
@@ -113,9 +116,13 @@ const isAuthenticated = computed(() => {
 
 const { locale, setLocale } = useI18n();
 
+// const current = ref('en')
+
 const updateLocale = (value) => {
   setLocale(value);
   localStorage.setItem("locale", value);
+  // current.value = current.value === 'en' ? 'ar' : 'en'
+  // formkit.setLocale(current.value);
 };
 
 const isRTL = ref(false);

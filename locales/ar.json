@@ -77,7 +77,11 @@
   },
   "buttons": {
     "find_out_more": "اعرف المزيد",
-    "subscribe": "الاشتراك"
+    "subscribe": "الاشتراك",
+    "continue_with_facebook": "تابع مع فيسبوك",
+    "continue_with_google": "تابع مع جوجل",
+    "loading": "جارٍ التحميل",
+    "reset": "إعادة تعيين"
   },
   "placeholder": {
     "email_address": "عنوان البريد الإلكتروني"
@@ -91,5 +95,23 @@
     "results": "النتائج",
     "tourism_programs": "برامج السياحة",
     "choose_your_favourite_tourist_destination": "اختر وجهتك السياحية المفضلة"
+  },
+  "forms": {
+    "login": "تسجيل الدخول",
+    "email_address": "البريد الإلكتروني",
+    "password": "كلمة المرور",
+    "log_in_with_social": "تسجيل الدخول عبر وسائل التواصل الاجتماعي",
+    "dont_have_an_account": "ليس لديك حساب؟",
+    "register": "تسجيل",
+    "forget_password": "نسيت كلمة المرور",
+    "first_name": "الاسم الأول",
+    "last_name": "الاسم الأخير",
+    "sign_up": "تسجيل حساب جديد",
+    "sign_up_with_social": "التسجيل باستخدام الشبكات الاجتماعية",
+"already_have_an_account": "لديك بالفعل حساب؟",
+"back_to_login": "العودة للتسجيل الدخول",
+"reset_password": "إعادة تعيين كلمة المرور"
+
+
   }
 }

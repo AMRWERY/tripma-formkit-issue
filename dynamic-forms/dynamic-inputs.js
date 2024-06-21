@@ -2,7 +2,7 @@ const loginSchema = [
   {
     $formkit: "email",
     name: "email",
-    label: "Email",
+    label: "forms.email_address",
     validation: "required|email|ends_with:.com",
     outerClass:
       "px-3 py-2 text-gray-800 transition duration-100 rounded ring-indigo-300 focus:ring",
@@ -11,7 +11,7 @@ const loginSchema = [
   {
     $formkit: "password",
     name: "password",
-    label: "Password",
+    label: "forms.password",
     validation: "required|password|length:6,7",
     outerClass:
       "px-3 py-2 text-gray-800 transition duration-100 rounded ring-indigo-300 focus:ring",
@@ -23,7 +23,7 @@ const registrationSchema = [
   {
     $formkit: "text",
     name: "firstName",
-    label: "First Name",
+    label: "forms.first_name",
     validation: "required|contains_numeric|length:3,10",
     outerClass:
       "px-3 py-2 text-gray-800 transition duration-100 rounded ring-indigo-300 focus:ring",
@@ -32,7 +32,7 @@ const registrationSchema = [
   {
     $formkit: "text",
     name: "lastName",
-    label: "Last Name",
+    label: "forms.last_name",
     validation: "required|contains_numeric|length:3,10",
     outerClass:
       "px-3 py-2 text-gray-800 transition duration-100 rounded ring-indigo-300 focus:ring",
@@ -41,7 +41,7 @@ const registrationSchema = [
   {
     $formkit: "email",
     name: "email",
-    label: "Email",
+    label: "forms.email_address",
     validation: "required|email|ends_with:.com",
     outerClass:
       "px-3 py-2 text-gray-800 transition duration-100 rounded ring-indigo-300 focus:ring",
@@ -50,7 +50,7 @@ const registrationSchema = [
   {
     $formkit: "password",
     name: "password",
-    label: "Password",
+    label: "forms.password",
     validation: "required|password|length:6,7",
     outerClass:
       "relative px-3 py-2 text-gray-800 transition duration-100 rounded ring-indigo-300 focus:ring",
@@ -63,7 +63,7 @@ const resetPasswordSchema = [
   {
     $formkit: "email",
     name: "email",
-    label: "Email",
+    label: "forms.email_address",
     validation: "required|email|ends_with:.com",
     outerClass:
       "px-3 py-2 text-gray-800 transition duration-100 rounded ring-indigo-300 focus:ring",
@@ -75,7 +75,7 @@ const contactUsSchema = [
   {
     $formkit: "email",
     name: "email",
-    label: "Email",
+    label: "forms.email_address",
     validation: "required|email|ends_with:.com",
     outerClass:
       "px-3 py-2 text-gray-800 transition duration-100 rounded ring-indigo-300 focus:ring",

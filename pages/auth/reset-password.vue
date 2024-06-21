@@ -7,30 +7,31 @@
       <div class="absolute inset-0 flex flex-col items-center justify-center">
         <div class="w-full max-w-md py-2 mx-auto bg-white rounded-2xl">
           <div class="mx-auto max-w-screen-2xl">
-            <h2 class="mb-4 text-2xl font-bold text-center text-gray-800 md:mb-4 lg:text-3xl">Reset Password</h2>
+            <h2 class="mb-4 text-2xl font-bold text-center text-gray-800 md:mb-4 lg:text-3xl">
+              {{ $t('forms.reset_password') }}</h2>
 
             <FormKit type="form" id="reset-password-form" v-model="data" :actions="false" :incomplete-message="false"
               @submit="resetPassword" class="max-w-lg mx-auto">
               <div class="flex flex-col gap-4 p-4">
                 <div>
-                  <FormKitSchema :schema="resetPasswordSchema" />
+                  <FormKitSchema :schema="translatedResetPasswordSchema" />
                 </div>
 
                 <button type="submit" :disabled="loading"
                   class="block px-8 py-3 text-sm font-semibold text-center text-white transition duration-100 bg-gray-800 rounded-lg outline-none ring-gray-300 hover:bg-gray-700 focus-visible:ring active:bg-gray-600 md:text-base">
                   <div v-if="loading">
-                    <span class="me-2">Loading...</span>
+                    <span class="me-2">{{ $t('buttons.loading') }}...</span>
                     <icon name="svg-spinners:270-ring-with-bg" />
                   </div>
-                  <span v-else>Reset</span>
+                  <span v-else>{{ $t('buttons.reset') }}</span>
                 </button>
               </div>
 
               <div class="flex items-center justify-center p-4 bg-gray-100">
                 <p class="text-sm text-center text-gray-500">
                   <nuxt-link to="/auth/login"
-                    class="text-indigo-500 transition duration-100 hover:text-indigo-600 active:text-indigo-700">Back to
-                    Login</nuxt-link>
+                    class="text-indigo-500 transition duration-100 hover:text-indigo-600 active:text-indigo-700">{{
+                      $t('forms.back_to_login') }}</nuxt-link>
                 </p>
               </div>
             </FormKit>
@@ -47,15 +48,15 @@
 <script setup>
 import { resetPasswordSchema } from '@/dynamic-forms/dynamic-inputs'
 
+const { t } = useI18n();
 const store = useAuthStore()
+const loading = ref(false);
+const showAlert = ref(false);
+const alertMessage = ref('Your password has been reset successfully, please check your email');
 
 const data = reactive({
   email: '',
 });
-
-const loading = ref(false);
-const showAlert = ref(false);
-const alertMessage = ref('Your password has been reset successfully, please check your email');
 
 const closeAlert = () => {
   showAlert.value = false;
@@ -81,4 +82,6 @@ const resetPassword = async () => {
     loading.value = false;
   }
 };
+
+const translatedResetPasswordSchema = computed(() => translateSchemaLabels(resetPasswordSchema, t));
 </script>
