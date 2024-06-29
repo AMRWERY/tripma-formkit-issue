@@ -3,6 +3,7 @@
     <filters />
     <adds />
     <top-rated-hotels />
+    <popular-searches />
   </div>
 </template>
 

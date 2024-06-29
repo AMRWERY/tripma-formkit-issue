@@ -2,7 +2,6 @@
   <div>
     <section class="px-4 py-6 mx-auto max-w-7xl sm:px-6 lg:px-8">
       <span class="text-xl">Take a dip at these top-rated hotels</span>
-
       <div>
         <!--Tabs navigation-->
         <ul class="flex flex-row flex-wrap mb-5 list-none border-b-0 ps-0" role="tablist" data-twe-nav-ref>
@@ -191,9 +190,3 @@ onMounted(async () => {
   initTWE({ Tab });
 });
 </script>
-
-<!-- const egy = ref([
-  { img: 'https://justfields.com/storage/projects/7M5rV059/del-mar.jpg', title: 'Sentido Casa del Mar', rate: '9.2 - Excellent', count: '1665', place: 'Hurghada', featureOne: 'Pool', featureOneIcon: 'ph:swimming-pool-fill', featureTwo: 'Spa', featureTwoIcon: 'icon-park-solid:spa-candle' },
-  { img: 'https://justfields.com/storage/projects/7M5rV059/savoy.jpg', title: 'Savoy Sharm El Sheikh', rate: '9.2 - Excellent', count: '13756', place: 'Sharm el-Sheikh', featureOne: 'Direct beach access', featureOneIcon: 'icon-park-solid:beach-umbrella', featureTwo: 'Pool', featureTwoIcon: 'ph:swimming-pool-fill' },
-  { img: 'https://justfields.com/storage/projects/7M5rV059/makadi.jpg', title: 'Jaz Makadi Oasis Resort', rate: '9.4 - Excellent', count: '13065', place: 'Hurghada', featureOne: 'Pool', featureOneIcon: 'ph:swimming-pool-fill', featureTwo: 'Spa', featureTwoIcon: 'icon-park-solid:spa-candle' }
-]) -->
