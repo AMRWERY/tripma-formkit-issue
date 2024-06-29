@@ -1,12 +1,12 @@
 <template>
   <div>
     <header class="z-30 flex items-center w-full h-24 sm:h-24 navbar">
-      <div class="container flex items-center justify-between max-w-full px-4 px-6 py-6 mx-auto sm:px-6 lg:px-8">
-        <nuxt-link to="/" class="text-3xl font-black text-gray-800">
+      <div class="container flex items-center justify-between max-w-full px-6 py-6 mx-auto sm:px-6 lg:px-8">
+        <nuxt-link to="/" class="text-3xl font-black text-gray-800 text-gradient" ref="el">
           Tripma
         </nuxt-link>
         <div class="flex items-center">
-          <nav class="items-center hidden text-lg text-gray-800 font-sen lg:flex">
+          <nav class="items-center hidden text-lg text-gray-800 font-sen lg:flex" v-if="!isAuthPage">
             <nuxt-link to="/destinations" class="flex px-6 py-2">{{ $t('layout.destinations') }}</nuxt-link>
             <nuxt-link to="/hotels" class="flex px-6 py-2">{{ $t('layout.hotels') }}</nuxt-link>
             <nuxt-link to="#" class="flex px-6 py-2">{{ $t('layout.flights') }}</nuxt-link>
@@ -34,7 +34,7 @@
               <icon name="mdi:logout" size="30px" />
             </nuxt-link>
           </nav>
-          <button type="button" class="flex flex-col ml-4 lg:hidden" @click="toggleMenu">
+          <button type="button" class="flex flex-col ml-4 lg:hidden" @click="toggleMenu" v-if="!isAuthPage">
             <icon name="mingcute:menu-fill" class="mb-1" />
           </button>
         </div>
@@ -106,23 +106,19 @@ const logout = async () => {
   }
 }
 
-const isAuthenticated = computed(() => {
-  if (typeof sessionStorage !== 'undefined') {
-    return sessionStorage.getItem('isAuthenticated') === 'true';
-  } else {
-    return false;
-  }
-});
+// const isAuthenticated = computed(() => {
+//   if (typeof sessionStorage !== 'undefined') {
+//     return sessionStorage.getItem('isAuthenticated') === 'true';
+//   } else {
+//     return false;
+//   }
+// });
 
 const { locale, setLocale } = useI18n();
-
-// const current = ref('en')
 
 const updateLocale = (value) => {
   setLocale(value);
   localStorage.setItem("locale", value);
-  // current.value = current.value === 'en' ? 'ar' : 'en'
-  // formkit.setLocale(current.value);
 };
 
 const isRTL = ref(false);
@@ -136,6 +132,25 @@ onMounted(() => {
   if (storedLocale) {
     setLocale(storedLocale);
   }
+});
+
+//logo composable
+const { el } = useAnimateRotation();
+
+//auth composable
+const isAuthenticated = useIsAuthenticated()
+
+//hide routes composable
+const { isAuthPage } = useAuthPage();
+
+const closeMenu = () => {
+  isMenuOpen.value = false;
+};
+
+const router = useRouter();
+
+router.afterEach(() => {
+  closeMenu();
 });
 </script>
 
@@ -153,5 +168,11 @@ onMounted(() => {
 .menu-fade-enter-to,
 .menu-fade-leave-from {
   opacity: 1;
+}
+
+.text-gradient {
+  background: linear-gradient(to right, #4F46E5, #6196A6);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 </style>
