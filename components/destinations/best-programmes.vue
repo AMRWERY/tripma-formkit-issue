@@ -28,15 +28,15 @@
                   <h2 class="mb-2 text-base font-medium text-gray-700 dark:text-gray-300">
                     {{ offer.smallTitle }}
                   </h2>
-                  <p class="ml-auto text-base font-medium font-semibold text-green-500 text-md dark:text-white">
+                  <p class="ml-auto text-base font-semibold text-green-500 text-md dark:text-white">
                     ${{ offer.price }}
                   </p>
                 </div>
                 <div class="flex items-center">
-                  <p class="mb-2 text-base font-medium text-gray-900 dark:text-white">
+                  <p class="mb-2 text-base font-medium text-gray-900 truncate dark:text-white">
                     {{ offer.hotel }}
                   </p>
-                  <p class="ml-auto text-base font-medium font-semibold text-green-500 text-md dark:text-white">
+                  <p class="inline ml-auto text-sm font-semibold text-green-500 dark:text-white">
                     {{ offer.duration }}
                   </p>
                 </div>
@@ -85,7 +85,7 @@ const breakpoints = ref({
 
 <style scoped>
 .carousel__slide {
-  padding: 5px;
+  padding: 15px;
 }
 
 .carousel__viewport {

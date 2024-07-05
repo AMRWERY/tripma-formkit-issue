@@ -82,10 +82,14 @@
     "continue_with_google": "Continue with Google",
     "loading": "Loading",
     "reset": "Reset",
-    "lets_talk": "Let's talk"
+    "lets_talk": "Let's talk",
+    "apply": "Apply"
   },
   "placeholder": {
-    "email_address": "Email Address"
+    "email_address": "Email Address",
+    "where_to": "Where to?",
+    "check_in": "Check in",
+    "check_out": "Check out"
   },
   "destinations": {
     "best_tourist_programs": "Best Tourist Programs",
@@ -95,7 +99,25 @@
     "not_include_car": "Not Include Car",
     "results": "Results",
     "tourism_programs": "Tourism Programs",
-    "choose_your_favourite_tourist_destination": "Choose your favourite tourist destination"
+    "choose_your_favourite_tourist_destination": "Choose your favourite tourist destination",
+    "go_trip": "Go Trip",
+    "flight_line": "Flight Line",
+    "going_from": "Going From",
+    "arrival_in": "Arrival In",
+    "departure_time": "Departure Time",
+    "arrival_time": "Arrival Time",
+    "allowed_weight_kg": "Allowed Weight (KG)",
+    "kg": "KG",
+    "flight_number": "Flight Number",
+    "return_trip": "Return Trip",
+    "program_details": "Program Details",
+    "day_1": "Day 1",
+    "day_2": "Day 2",
+    "day_3": "Day 3",
+    "day_4": "Day 4",
+    "day_5": "Day 5",
+    "day_6": "Day 6",
+    "reviews": "Reviews"
   },
   "forms": {
     "login": "Login",
@@ -143,5 +165,26 @@
     "about_a_beta_feature_need_details_about_our": "about a beta feature? Need details about our",
     "business_plan_let_us_know": "Business plan? Let us know",
     "from_small_beginnings_come_great_things": "From small beginnings come great things."
+  },
+  "hotels": {
+    "we_compare_hotel_prices_from_100s_of_sites": "We compare hotel prices from 100s of sites",
+    "we’ll_do_the_searching_you_do_the_saving": "We’ll do the searching. You do the saving",
+    "guests_rooms": "Guests & Rooms",
+    "adults": "Adults",
+    "children": "Children",
+    "rooms": "Rooms",
+    "search_simply": "Search simply",
+    "search_through_5_million_hotels_in_just_a_few_seconds": "Search through 5 million hotels in just a few seconds.",
+    "compare_confidently": "Compare confidently",
+    "compare_hotel_prices_from_100s_of_sites_at_once": "Compare hotel prices from 100s of sites at once.",
+    "save_big": "Save big",
+    "discover_a_great_deal_to_book_on_our_partner_sites": "Discover a great deal to book on our partner sites."
+  },
+  "head": {
+    "destinations": "Destinations",
+    "hotels": "Hotels",
+    "login": "Login",
+    "sign_up": "Sign up",
+    "reset_password": "Reset password"
   }
 }

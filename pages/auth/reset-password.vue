@@ -84,4 +84,8 @@ const resetPassword = async () => {
 };
 
 const translatedResetPasswordSchema = computed(() => translateSchemaLabels(resetPasswordSchema, t));
+
+useHead(() => ({
+  title: t('head.reset_password')
+}))
 </script>

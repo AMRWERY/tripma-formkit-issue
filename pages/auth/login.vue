@@ -105,4 +105,8 @@ const signInWithGoogleAccount = () => {
 };
 
 const translatedLoginSchema = computed(() => translateSchemaLabels(loginSchema, t));
+
+useHead(() => ({
+  title: t('head.login')
+}))
 </script>

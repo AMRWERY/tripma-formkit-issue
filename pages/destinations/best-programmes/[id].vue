@@ -18,10 +18,10 @@
               </div>
 
               <!-- Go Trip -->
-              <p class="my-3 text-2xl font-semibold leading-relaxed">Go Trip</p>
+              <p class="my-3 text-2xl font-semibold leading-relaxed">{{ $t('destinations.go_trip') }}</p>
               <div class="col-span-full">
-                <label for="street-address" class="block text-sm font-medium leading-6 text-gray-900">Flight
-                  Line</label>
+                <label for="street-address" class="block text-sm font-medium leading-6 text-gray-900">{{
+                  $t('destinations.flight_line') }}</label>
                 <div class="mt-2">
                   <div class="text-center read-only-input">
                     <p class="font-medium">{{ programDetails?.flightLineGo }}</p>
@@ -30,70 +30,70 @@
               </div>
               <div class="grid grid-cols-1 mt-5 gap-x-6 gap-y-8 sm:grid-cols-6">
                 <div class="sm:col-span-3">
-                  <label for="going-from" class="block text-sm font-medium leading-6 text-gray-900">Going
-                    From</label>
+                  <label for="going-from" class="block text-sm font-medium leading-6 text-gray-900">{{
+                    $t('destinations.going_from') }}</label>
                   <div class="mt-2">
                     <div class="read-only-input">
-                      <p class="ml-2 font-medium">{{ programDetails?.goFrom }}</p>
+                      <p class="font-medium truncate ms-2">{{ programDetails?.goFrom }}</p>
                     </div>
                   </div>
                 </div>
                 <div class="sm:col-span-3">
-                  <label for="arrival-in" class="block text-sm font-medium leading-6 text-gray-900">Arrival
-                    In</label>
+                  <label for="arrival-in" class="block text-sm font-medium leading-6 text-gray-900">{{
+                    $t('destinations.arrival_in') }}</label>
                   <div class="mt-2">
                     <div class="read-only-input">
-                      <p class="ml-2 font-medium">{{ programDetails?.arrivalIn }}</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="grid grid-cols-1 mt-5 gap-x-6 gap-y-8 sm:grid-cols-6">
-                <div class="sm:col-span-3">
-                  <label for="departure-time" class="block text-sm font-medium leading-6 text-gray-900">Departure
-                    Time</label>
-                  <div class="mt-2">
-                    <div class="read-only-input">
-                      <p class="ml-2 font-medium">{{ programDetails?.departureTime }}</p>
-                    </div>
-                  </div>
-                </div>
-                <div class="sm:col-span-3">
-                  <label for="arrival-time" class="block text-sm font-medium leading-6 text-gray-900">Arrival
-                    Time</label>
-                  <div class="mt-2">
-                    <div class="read-only-input">
-                      <p class="ml-2 font-medium">{{ programDetails?.arrivalTime }}</p>
+                      <p class="font-medium ms-2">{{ programDetails?.arrivalIn }}</p>
                     </div>
                   </div>
                 </div>
               </div>
               <div class="grid grid-cols-1 mt-5 gap-x-6 gap-y-8 sm:grid-cols-6">
                 <div class="sm:col-span-3">
-                  <label for="kg" class="block text-sm font-medium leading-6 text-gray-900">Allowed Weight
-                    (KG)</label>
+                  <label for="departure-time" class="block text-sm font-medium leading-6 text-gray-900">{{
+                    $t('destinations.departure_time') }}</label>
                   <div class="mt-2">
                     <div class="read-only-input">
-                      <p class="ml-2 font-medium">{{ programDetails?.allowedKG }} KG</p>
+                      <p class="font-medium ms-2">{{ programDetails?.departureTime }}</p>
                     </div>
                   </div>
                 </div>
                 <div class="sm:col-span-3">
-                  <label for="flight-number" class="block text-sm font-medium leading-6 text-gray-900">Flight
-                    Number</label>
+                  <label for="arrival-time" class="block text-sm font-medium leading-6 text-gray-900">{{
+                    $t('destinations.arrival_time') }}</label>
                   <div class="mt-2">
                     <div class="read-only-input">
-                      <p class="ml-2 font-medium">{{ programDetails?.flightNumberGo }}</p>
+                      <p class="font-medium ms-2">{{ programDetails?.arrivalTime }}</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="grid grid-cols-1 mt-5 gap-x-6 gap-y-8 sm:grid-cols-6">
+                <div class="sm:col-span-3">
+                  <label for="kg" class="block text-sm font-medium leading-6 text-gray-900">{{
+                    $t('destinations.allowed_weight_kg') }}</label>
+                  <div class="mt-2">
+                    <div class="read-only-input">
+                      <p class="font-medium ms-2">{{ programDetails?.allowedKG }} {{ $t('destinations.kg') }}</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="sm:col-span-3">
+                  <label for="flight-number" class="block text-sm font-medium leading-6 text-gray-900">{{
+                    $t('destinations.flight_number') }}</label>
+                  <div class="mt-2">
+                    <div class="read-only-input">
+                      <p class="font-medium ms-2">{{ programDetails?.flightNumberGo }}</p>
                     </div>
                   </div>
                 </div>
               </div>
 
               <!-- Return Trip -->
-              <p class="my-3 mt-10 text-2xl font-semibold leading-relaxed">Return Trip</p>
+              <p class="my-3 mt-10 text-2xl font-semibold leading-relaxed">{{ $t('destinations.return_trip') }}</p>
               <div class="col-span-full">
-                <label for="street-address" class="block text-sm font-medium leading-6 text-gray-900">Flight
-                  Line</label>
+                <label for="street-address" class="block text-sm font-medium leading-6 text-gray-900">{{
+                  $t('destinations.flight_line') }}</label>
                 <div class="mt-2">
                   <div class="text-center read-only-input">
                     <p class="font-medium">{{ programDetails?.flightLineReturn }}</p>
@@ -102,60 +102,60 @@
               </div>
               <div class="grid grid-cols-1 mt-5 gap-x-6 gap-y-8 sm:grid-cols-6">
                 <div class="sm:col-span-3">
-                  <label for="going-from" class="block text-sm font-medium leading-6 text-gray-900">Going
-                    From</label>
+                  <label for="going-from" class="block text-sm font-medium leading-6 text-gray-900">{{
+                    $t('destinations.going_from') }}</label>
                   <div class="mt-2">
                     <div class="read-only-input">
-                      <p class="ml-2 font-medium">{{ programDetails?.arrivalIn }}</p>
+                      <p class="font-medium ms-2">{{ programDetails?.arrivalIn }}</p>
                     </div>
                   </div>
                 </div>
                 <div class="sm:col-span-3">
-                  <label for="arrival-in" class="block text-sm font-medium leading-6 text-gray-900">Arrival
-                    In</label>
+                  <label for="arrival-in" class="block text-sm font-medium leading-6 text-gray-900">{{
+                    $t('destinations.arrival_in') }}</label>
                   <div class="mt-2">
                     <div class="read-only-input">
-                      <p class="ml-2 font-medium truncate">{{ programDetails?.goFrom }}</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="grid grid-cols-1 mt-5 gap-x-6 gap-y-8 sm:grid-cols-6">
-                <div class="sm:col-span-3">
-                  <label for="departure-time" class="block text-sm font-medium leading-6 text-gray-900">Departure
-                    Time</label>
-                  <div class="mt-2">
-                    <div class="read-only-input">
-                      <p class="ml-2 font-medium">{{ programDetails?.departureTime }}</p>
-                    </div>
-                  </div>
-                </div>
-                <div class="sm:col-span-3">
-                  <label for="arrival-time" class="block text-sm font-medium leading-6 text-gray-900">Arrival
-                    Time</label>
-                  <div class="mt-2">
-                    <div class="read-only-input">
-                      <p class="ml-2 font-medium">{{ programDetails?.arrivalTime }}</p>
+                      <p class="font-medium truncate ms-2">{{ programDetails?.goFrom }}</p>
                     </div>
                   </div>
                 </div>
               </div>
               <div class="grid grid-cols-1 mt-5 gap-x-6 gap-y-8 sm:grid-cols-6">
                 <div class="sm:col-span-3">
-                  <label for="kg" class="block text-sm font-medium leading-6 text-gray-900">Allowed Weight
-                    (KG)</label>
+                  <label for="departure-time" class="block text-sm font-medium leading-6 text-gray-900">{{
+                    $t('destinations.departure_time') }}</label>
                   <div class="mt-2">
                     <div class="read-only-input">
-                      <p class="ml-2 font-medium">{{ programDetails?.allowedKG }} KG</p>
+                      <p class="font-medium ms-2">{{ programDetails?.departureTime }}</p>
                     </div>
                   </div>
                 </div>
                 <div class="sm:col-span-3">
-                  <label for="flight-number" class="block text-sm font-medium leading-6 text-gray-900">Flight
-                    Number</label>
+                  <label for="arrival-time" class="block text-sm font-medium leading-6 text-gray-900">{{
+                    $t('destinations.arrival_time') }}</label>
                   <div class="mt-2">
                     <div class="read-only-input">
-                      <p class="ml-2 font-medium">{{ programDetails?.flightNumberReturn }}</p>
+                      <p class="font-medium ms-2">{{ programDetails?.arrivalTime }}</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="grid grid-cols-1 mt-5 gap-x-6 gap-y-8 sm:grid-cols-6">
+                <div class="sm:col-span-3">
+                  <label for="kg" class="block text-sm font-medium leading-6 text-gray-900">{{
+                    $t('destinations.allowed_weight_kg') }}</label>
+                  <div class="mt-2">
+                    <div class="read-only-input">
+                      <p class="font-medium ms-2">{{ programDetails?.allowedKG }} {{ $t('destinations.kg') }}</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="sm:col-span-3">
+                  <label for="flight-number" class="block text-sm font-medium leading-6 text-gray-900">{{
+                    $t('destinations.flight_number') }}</label>
+                  <div class="mt-2">
+                    <div class="read-only-input">
+                      <p class="font-medium ms-2">{{ programDetails?.flightNumberReturn }}</p>
                     </div>
                   </div>
                 </div>
@@ -172,7 +172,8 @@
                 </h2>
                 <div class="flex">
                   <rating />
-                  <p class="text-blue-500 hover:underline dark:text-gray-400 ms-7 ">4 Reviews</p>
+                  <p class="text-blue-500 hover:underline dark:text-gray-400 ms-7 ">4 {{ $t('destinations.reviews') }}
+                  </p>
                   <div class="flex gap-4 ms-auto">
                     <SocialShare network="facebook" :styled="false" :label="false"
                       class="text-gray-400 transition duration-100 hover:text-gray-500 active:text-gray-600" />
@@ -190,11 +191,11 @@
               </div>
               <div>
                 <p class="mb-4 text-lg font-semibold dark:text-gray-400">
-                  Program Details
+                  {{ $t('destinations.program_details') }}
                 </p>
                 <div v-if="programDetails?.dayOne">
                   <div class="grid grid-cols-2 gap-4 pb-4 lg:grid-cols-2 dark:border-gray-600">
-                    <div class="day-count">Day 1</div>
+                    <div class="day-count">{{ $t('destinations.day_1') }}</div>
                     <p class="ms-auto">{{ programDetails?.dayOne?.title }}</p>
                   </div>
                   <div class="grid grid-cols-2 gap-4 pb-4 lg:grid-cols-2 dark:border-gray-600">
@@ -209,7 +210,7 @@
                 <hr class="my-5">
                 <div v-if="programDetails?.dayTwo">
                   <div class="grid grid-cols-2 gap-4 pb-4 lg:grid-cols-2 dark:border-gray-600">
-                    <div class="day-count">Day 2</div>
+                    <div class="day-count">{{ $t('destinations.day_2') }}</div>
                     <p class="ms-auto">{{ programDetails?.dayTwo?.title }}</p>
                   </div>
                   <div class="grid grid-cols-2 gap-4 pb-4 lg:grid-cols-2 dark:border-gray-600">
@@ -224,7 +225,7 @@
                 <hr class="my-5">
                 <div v-if="programDetails?.dayThree">
                   <div class="grid grid-cols-2 gap-4 pb-4 lg:grid-cols-2 dark:border-gray-600">
-                    <div class="day-count">Day 3</div>
+                    <div class="day-count">{{ $t('destinations.day_3') }}</div>
                     <p class="ms-auto">{{ programDetails?.dayThree?.title }}</p>
                   </div>
                   <div class="grid grid-cols-2 gap-4 pb-4 lg:grid-cols-2 dark:border-gray-600">
@@ -239,7 +240,7 @@
                 <hr class="my-5">
                 <div v-if="programDetails?.dayFour">
                   <div class="grid grid-cols-2 gap-4 pb-4 lg:grid-cols-2 dark:border-gray-600">
-                    <div class="day-count">Day 4</div>
+                    <div class="day-count">{{ $t('destinations.day_4') }}</div>
                     <p class="ms-auto">{{ programDetails?.dayFour?.title }}</p>
                   </div>
                   <div class="grid grid-cols-2 gap-4 pb-4 lg:grid-cols-2 dark:border-gray-600">
@@ -254,7 +255,7 @@
                 <hr class="my-5">
                 <div v-if="programDetails?.dayFive">
                   <div class="grid grid-cols-2 gap-4 pb-4 lg:grid-cols-2 dark:border-gray-600">
-                    <div class="day-count">Day 5</div>
+                    <div class="day-count">{{ $t('destinations.day_5') }}</div>
                     <p class="ms-auto">{{ programDetails?.dayFive?.title }}</p>
                   </div>
                   <div class="grid grid-cols-2 gap-4 pb-4 lg:grid-cols-2 dark:border-gray-600">
@@ -269,7 +270,7 @@
                 <hr class="my-5">
                 <div v-if="programDetails?.daySix">
                   <div class="grid grid-cols-2 gap-4 pb-4 lg:grid-cols-2 dark:border-gray-600">
-                    <div class="day-count">Day 6</div>
+                    <div class="day-count">{{ $t('destinations.day_6') }}</div>
                     <p class="ms-auto">{{ programDetails?.daySix?.title }}</p>
                   </div>
                   <div class="grid grid-cols-2 gap-4 pb-4 lg:grid-cols-2 dark:border-gray-600">
@@ -282,7 +283,6 @@
                   </div>
                 </div>
               </div>
-
             </div>
           </div>
         </div>
@@ -302,6 +302,10 @@ onMounted(async () => {
   programDetails.value = await store.getProgramById(programId.value)
   // console.log(programId.value);
 });
+
+useHead(() => ({
+  title: programDetails.value ? programDetails.value.title : '',
+}));
 </script>
 
 <style scoped>

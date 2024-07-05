@@ -82,10 +82,14 @@
     "continue_with_google": "تابع مع جوجل",
     "loading": "جارٍ التحميل",
     "reset": "إعادة تعيين",
-    "lets_talk": "هيا نتحدث"
+    "lets_talk": "هيا نتحدث",
+    "apply": "تطبيق"
   },
   "placeholder": {
-    "email_address": "عنوان البريد الإلكتروني"
+    "email_address": "عنوان البريد الإلكتروني",
+    "where_to": "إلى أين؟",
+    "check_in": "تسجيل الوصول",
+    "check_out": "تسجيل الخروج"
   },
   "destinations": {
     "best_tourist_programs": "أفضل البرامج السياحية",
@@ -95,7 +99,25 @@
     "not_include_car": "عدم تضمين السيارة",
     "results": "النتائج",
     "tourism_programs": "برامج السياحة",
-    "choose_your_favourite_tourist_destination": "اختر وجهتك السياحية المفضلة"
+    "choose_your_favourite_tourist_destination": "اختر وجهتك السياحية المفضلة",
+    "go_trip": "رحله الذهاب",
+    "flight_line": "خط الرحلة",
+    "going_from": "المغادرة من",
+    "arrival_in": "الوصول إلى",
+    "departure_time": "وقت المغادرة",
+    "arrival_time": "وقت الوصول",
+    "allowed_weight_kg": "الوزن المسموح به (كغ)",
+    "kg": "كغ",
+    "flight_number": "رقم الرحلة",
+    "return_trip": "رحلة العودة",
+    "program_details": "تفاصيل البرنامج",
+    "day_1": "اليوم 1",
+    "day_2": "اليوم 2",
+    "day_3": "اليوم 3",
+    "day_4": "اليوم 4",
+    "day_5": "اليوم 5",
+    "day_6": "اليوم 6",
+    "reviews": "تقييمات"
   },
   "forms": {
     "login": "تسجيل الدخول",
@@ -143,5 +165,26 @@
     "about_a_beta_feature_need_details_about_our": "حول ميزة تجريبية؟ تحتاج تفاصيل عن",
     "business_plan_let_us_know": "خطتنا التجارية؟ أخبرنا",
     "from_small_beginnings_come_great_things": "من البدايات الصغيرة تأتي الأشياء العظيمة."
+  },
+  "hotels": {
+    "we_compare_hotel_prices_from_100s_of_sites": "نقوم بمقارنة أسعار الفنادق من مئات المواقع",
+    "we’ll_do_the_searching_you_do_the_saving": "سنقوم بالبحث، أنت احفظ المال",
+    "guests_rooms": "الضيوف والغرف",
+    "adults": "البالغين",
+    "children": "الأطفال",
+    "rooms": "الغرف",
+    "search_simply": "البحث ببساطة",
+"search_through_5_million_hotels_in_just_a_few_seconds": "ابحث في 5 ملايين فندق في بضع ثوانٍ فقط.",
+"compare_confidently": "قارن بثقة",
+"compare_hotel_prices_from_100s_of_sites_at_once": "قارن أسعار الفنادق من مئات المواقع دفعة واحدة.",
+"save_big": "وفر كثيرًا",
+"discover_a_great_deal_to_book_on_our_partner_sites": "اكتشف صفقة رائعة للحجز على مواقع شركائنا."
+  },
+  "head": {
+    "destinations": "الوجهات",
+    "hotels": "الفنادق",
+    "login": "تسجيل الدخول",
+    "sign_up": "تسجيل حساب جديد",
+    "reset_password": "إعادة تعيين كلمة المرور"
   }
 }

@@ -28,7 +28,8 @@
 
                 <div class="relative flex items-center justify-center">
                   <span class="absolute inset-x-0 h-px bg-gray-300"></span>
-                  <span class="relative px-4 text-sm text-gray-400 bg-white">{{ $t('forms.sign_up_with_social') }}</span>
+                  <span class="relative px-4 text-sm text-gray-400 bg-white">{{ $t('forms.sign_up_with_social')
+                    }}</span>
                 </div>
 
                 <!-- <button type="button"
@@ -47,7 +48,8 @@
               <div class="flex items-center justify-center p-4 bg-gray-100">
                 <p class="text-sm text-center text-gray-500">{{ $t('forms.already_have_an_account') }}
                   <nuxt-link to="/auth/login"
-                    class="text-indigo-500 transition duration-100 hover:text-indigo-600 active:text-indigo-700">{{ $t('forms.back_to_login') }}</nuxt-link>
+                    class="text-indigo-500 transition duration-100 hover:text-indigo-600 active:text-indigo-700">{{
+                      $t('forms.back_to_login') }}</nuxt-link>
                 </p>
               </div>
             </FormKit>
@@ -93,4 +95,8 @@ const signUpWithGoogleAccount = () => {
 };
 
 const translatedRegisterSchema = computed(() => translateSchemaLabels(registrationSchema, t));
+
+useHead(() => ({
+  title: t('head.sign_up')
+}))
 </script>
