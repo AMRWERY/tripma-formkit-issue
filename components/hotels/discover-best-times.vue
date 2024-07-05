@@ -16,56 +16,56 @@
               data-twe-nav-ref>
               <li role="presentation">
                 <nuxt-link to=""
-                  class="my-2 block rounded-full bg-zinc-100 px-2 pb-2 pt-2 text-sm font-medium leading-tight text-neutral-500 dark:text-white dark:bg-black dark:hover:bg-black/60 dark:hover:text-neutral-500 data-[twe-nav-active]:bg-black data-[twe-nav-active]:text-white md:me-4"
+                  class="my-2 block rounded-full cursor-pointer bg-zinc-100 px-2 pb-2 pt-2 text-sm font-medium leading-tight text-neutral-500 dark:text-white dark:bg-black dark:hover:bg-black/60 dark:hover:text-neutral-500 data-[twe-nav-active]:bg-black data-[twe-nav-active]:text-white md:me-4"
                   id="pills-hurghada-tab" data-bg="https://justfields.com/storage/projects/7M5rV059/Hurghada_0.jpg"
                   data-name="Hurghada" data-twe-toggle="pill" data-twe-target="#pills-hurghada" data-twe-nav-active
                   role="tab" aria-controls="pills-hurghada" aria-selected="true">Hurghada</nuxt-link>
               </li>
               <li role="presentation">
                 <nuxt-link to=""
-                  class="my-2 block rounded-full bg-zinc-100 px-2 pb-2 pt-2 text-sm font-medium leading-tight text-neutral-500 dark:text-white dark:bg-black dark:hover:bg-black/60 dark:hover:text-neutral-500 data-[twe-nav-active]:bg-black data-[twe-nav-active]:text-white md:me-4"
+                  class="my-2 block rounded-full cursor-pointer bg-zinc-100 px-2 pb-2 pt-2 text-sm font-medium leading-tight text-neutral-500 dark:text-white dark:bg-black dark:hover:bg-black/60 dark:hover:text-neutral-500 data-[twe-nav-active]:bg-black data-[twe-nav-active]:text-white md:me-4"
                   id="pills-sharm-tab" data-bg="https://justfields.com/storage/projects/7M5rV059/Sharm-elSheikh_1.jpg"
                   data-name="Sharm el-Sheikh" data-twe-toggle="pill" data-twe-target="#pills-sharm" role="tab"
                   aria-controls="pills-sharm" aria-selected="false">Sharm el-Sheikh</nuxt-link>
               </li>
               <li role="presentation">
                 <nuxt-link to=""
-                  class="my-2 block rounded-full bg-zinc-100 px-2 pb-2 pt-2 text-sm font-medium leading-tight text-neutral-500 dark:text-white dark:bg-black dark:hover:bg-black/60 dark:hover:text-neutral-500 data-[twe-nav-active]:bg-black data-[twe-nav-active]:text-white md:me-4"
+                  class="my-2 block rounded-full cursor-pointer bg-zinc-100 px-2 pb-2 pt-2 text-sm font-medium leading-tight text-neutral-500 dark:text-white dark:bg-black dark:hover:bg-black/60 dark:hover:text-neutral-500 data-[twe-nav-active]:bg-black data-[twe-nav-active]:text-white md:me-4"
                   id="pills-ain-tab" data-bg="https://justfields.com/storage/projects/7M5rV059/Ain-El-Sokhna_2.jpg"
                   data-name="Ain El Sokhna" data-twe-toggle="pill" data-twe-target="#pills-ain" role="tab"
                   aria-controls="pills-ain" aria-selected="false">Ain El Sokhna</nuxt-link>
               </li>
               <li role="presentation">
                 <nuxt-link to=""
-                  class="my-2 block rounded-full bg-zinc-100 px-2 pb-2 pt-2 text-sm font-medium leading-tight text-neutral-500 dark:text-white dark:bg-black dark:hover:bg-black/60 dark:hover:text-neutral-500 data-[twe-nav-active]:bg-black data-[twe-nav-active]:text-white md:me-4"
+                  class="my-2 block rounded-full cursor-pointer bg-zinc-100 px-2 pb-2 pt-2 text-sm font-medium leading-tight text-neutral-500 dark:text-white dark:bg-black dark:hover:bg-black/60 dark:hover:text-neutral-500 data-[twe-nav-active]:bg-black data-[twe-nav-active]:text-white md:me-4"
                   id="pills-makkah-tab" data-bg="https://justfields.com/storage/projects/7M5rV059/Makkah_04.jpg"
                   data-name="Makkah" data-twe-toggle="pill" data-twe-target="#pills-makkah" role="tab"
                   aria-controls="pills-makkah" aria-selected="false">Makkah</nuxt-link>
               </li>
               <li role="presentation">
                 <nuxt-link to=""
-                  class="my-2 block rounded-full bg-zinc-100 px-2 pb-2 pt-2 text-sm font-medium leading-tight text-neutral-500 dark:text-white dark:bg-black dark:hover:bg-black/60 dark:hover:text-neutral-500 data-[twe-nav-active]:bg-black data-[twe-nav-active]:text-white md:me-4"
+                  class="my-2 block rounded-full cursor-pointer bg-zinc-100 px-2 pb-2 pt-2 text-sm font-medium leading-tight text-neutral-500 dark:text-white dark:bg-black dark:hover:bg-black/60 dark:hover:text-neutral-500 data-[twe-nav-active]:bg-black data-[twe-nav-active]:text-white md:me-4"
                   id="pills-dubai-tab" data-bg="https://justfields.com/storage/projects/7M5rV059/Dubai_05.jpg"
                   data-name="Dubai" data-twe-toggle="pill" data-twe-target="#pills-dubai" role="tab"
                   aria-controls="pills-dubai" aria-selected="false">Dubai</nuxt-link>
               </li>
               <li role="presentation">
                 <nuxt-link to=""
-                  class="my-2 block rounded-full bg-zinc-100 px-2 pb-2 pt-2 text-sm font-medium leading-tight text-neutral-500 dark:text-white dark:bg-black dark:hover:bg-black/60 dark:hover:text-neutral-500 data-[twe-nav-active]:bg-black data-[twe-nav-active]:text-white md:me-4"
+                  class="my-2 block rounded-full cursor-pointer bg-zinc-100 px-2 pb-2 pt-2 text-sm font-medium leading-tight text-neutral-500 dark:text-white dark:bg-black dark:hover:bg-black/60 dark:hover:text-neutral-500 data-[twe-nav-active]:bg-black data-[twe-nav-active]:text-white md:me-4"
                   id="pills-istanbul-tab" data-bg="https://justfields.com/storage/projects/7M5rV059/Dubai_05.jpg"
                   data-name="Istanbul" data-twe-toggle="pill" data-twe-target="#pills-istanbul" role="tab"
                   aria-controls="pills-istanbul" aria-selected="false">Istanbul</nuxt-link>
               </li>
               <li role="presentation">
                 <nuxt-link to=""
-                  class="my-2 block rounded-full bg-zinc-100 px-2 pb-2 pt-2 text-sm font-medium leading-tight text-neutral-500 dark:text-white dark:bg-black dark:hover:bg-black/60 dark:hover:text-neutral-500 data-[twe-nav-active]:bg-black data-[twe-nav-active]:text-white md:me-4"
+                  class="my-2 block rounded-full cursor-pointer bg-zinc-100 px-2 pb-2 pt-2 text-sm font-medium leading-tight text-neutral-500 dark:text-white dark:bg-black dark:hover:bg-black/60 dark:hover:text-neutral-500 data-[twe-nav-active]:bg-black data-[twe-nav-active]:text-white md:me-4"
                   id="pills-medina-tab" data-bg="https://justfields.com/storage/projects/7M5rV059/medina_06.jpg"
                   data-name="Medina" data-twe-toggle="pill" data-twe-target="#pills-medina" role="tab"
                   aria-controls="pills-medina" aria-selected="false">Medina</nuxt-link>
               </li>
               <li role="presentation">
                 <nuxt-link to=""
-                  class="my-2 block rounded-full bg-zinc-100 px-2 pb-2 pt-2 text-sm font-medium leading-tight text-neutral-500 dark:text-white dark:bg-black dark:hover:bg-black/60 dark:hover:text-neutral-500 data-[twe-nav-active]:bg-black data-[twe-nav-active]:text-white md:me-4"
+                  class="my-2 block rounded-full cursor-pointer bg-zinc-100 px-2 pb-2 pt-2 text-sm font-medium leading-tight text-neutral-500 dark:text-white dark:bg-black dark:hover:bg-black/60 dark:hover:text-neutral-500 data-[twe-nav-active]:bg-black data-[twe-nav-active]:text-white md:me-4"
                   id="pills-marsa-tab" data-bg="https://justfields.com/storage/projects/7M5rV059/Marsa_6.jpg"
                   data-name="Marsa" data-twe-toggle="pill" data-twe-target="#pills-marsa" role="tab"
                   aria-controls="pills-marsa" aria-selected="false">Marsa</nuxt-link>

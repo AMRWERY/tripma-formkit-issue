@@ -64,6 +64,9 @@
         </div>
       </div>
     </div>
+
+    <!-- Alert Component -->
+    <!-- <successfully-alert :showAlert="showAlert" @closeAlert="closeAlert" :message="alertMessage" /> -->
   </div>
 </template>
 
@@ -73,6 +76,8 @@ import { loginSchema } from '@/dynamic-forms/dynamic-inputs';
 const { t } = useI18n();
 const store = useAuthStore();
 const loading = ref(false);
+// const showAlert = ref(false);
+// const alertMessage = ref('reusable.your_password_has_been_reset_successfully_please_check_your_email');
 
 const data = reactive({
   email: '',
@@ -81,6 +86,8 @@ const data = reactive({
 
 const signIn = () => {
   loading.value = true;
+  // showAlert.value = true;
+  // alertMessage.value = t('reusable.your_password_has_been_reset_successfully_please_check_your_email');
   setTimeout(() => {
     store.userSignIn({
       email: data.email,
