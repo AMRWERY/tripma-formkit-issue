@@ -1,7 +1,7 @@
 <template>
   <div>
     <section class="px-4 py-6 mx-auto max-w-7xl sm:px-6 lg:px-8">
-      <p class="text-xl">Popular searches</p>
+      <p class="text-xl">{{ $t('hotels.popular_searches') }}</p>
       <div>
         <!--Tabs navigation-->
         <ul class="flex flex-row flex-wrap mb-5 list-none border-b-0 ps-0" role="tablist" data-twe-nav-ref>
@@ -10,7 +10,7 @@
               class="my-2 block border-x-0 border-b-2 cursor-pointer border-t-0 border-transparent px-7 pb-3.5 pt-4 text-xs font-semibold leading-tight text-neutral-500 hover:isolate hover:border-transparent hover:bg-neutral-100 focus:isolate focus:border-transparent data-[twe-nav-active]:border-primary data-[twe-nav-active]:text-primary dark:text-white/50 dark:hover:bg-neutral-700/60 dark:data-[twe-nav-active]:text-primary"
               data-twe-toggle="pill" data-twe-target="#tabs-cities" data-twe-nav-active role="tab"
               aria-controls="tabs-cities" aria-selected="true">
-              Cities
+              {{ $t('hotels.cities') }}
             </nuxt-link>
           </li>
           <li role="presentation">
@@ -18,7 +18,7 @@
               class="my-2 block border-x-0 border-b-2 cursor-pointer border-t-0 border-transparent px-7 pb-3.5 pt-4 text-xs font-semibold leading-tight text-neutral-500 hover:isolate hover:border-transparent hover:bg-neutral-100 focus:isolate focus:border-transparent data-[twe-nav-active]:border-primary data-[twe-nav-active]:text-primary dark:text-white/50 dark:hover:bg-neutral-700/60 dark:data-[twe-nav-active]:text-primary"
               data-twe-toggle="pill" data-twe-target="#tabs-destinations" role="tab" aria-controls="tabs-destinations"
               aria-selected="false">
-              Destinations
+              {{ $t('hotels.destinations') }}
             </nuxt-link>
           </li>
         </ul>
@@ -37,10 +37,12 @@
                         <h2 class="text-xl font-semibold text-[#007cc2]">{{ item.title }}</h2>
                       </div>
                       <div class="p-1 mt-2 bg-white rounded-xl">
-                        <p class="text-[#007cc2]">{{ item.hotels }} <span class="text-gray-800">Hotels</span></p>
+                        <p class="text-[#007cc2]">{{ item.hotels }} <span class="text-gray-800">{{ $t('hotels.hotels')
+                            }}</span></p>
                       </div>
                       <div class="p-1 mt-2 bg-white rounded-xl">
-                        <p class="text-[#007cc2]"><span class="text-gray-800">Avg.</span> {{ item.avg }}$</p>
+                        <p class="text-[#007cc2]"><span class="text-gray-800">{{ $t('hotels.avg') }}</span> {{ item.avg
+                          }}$</p>
                       </div>
                     </div>
                   </div>
@@ -64,10 +66,13 @@
                         <h2 class="text-xl font-semibold text-[#007cc2]">{{ item.title }}</h2>
                       </div>
                       <div class="p-1 mt-2 bg-white rounded-xl">
-                        <p class="text-[#007cc2]">{{ item.hotels }} <span class="text-gray-800">Hotels</span></p>
+                        <p class="text-[#007cc2]">{{ item.hotels }} <span class="text-gray-800">{{ $t('hotels.hotels')
+                            }}</span>
+                        </p>
                       </div>
                       <div class="p-1 mt-2 bg-white rounded-xl">
-                        <p class="text-[#007cc2]"><span class="text-gray-800">Avg.</span> {{ item.avg }}$</p>
+                        <p class="text-[#007cc2]"><span class="text-gray-800">{{ $t('hotels.avg') }}</span> {{ item.avg
+                          }}$</p>
                       </div>
                     </div>
                   </div>

@@ -11,6 +11,7 @@ export default defineNuxtConfig({
     "@vueuse/nuxt",
     "@stefanobartoletti/nuxt-social-share",
     "vue3-carousel-nuxt",
+    "nuxt-aos",
   ],
   tailwindcss: {
     cssPath: ["~/assets/css/tailwind.css", { injectPosition: "first" }],
@@ -44,6 +45,25 @@ export default defineNuxtConfig({
   },
   build: {
     transpile: ["@vuepic/vue-datepicker"],
+  },
+  aos: {
+    // Global settings:
+    disable: true,
+    startEvent: "DOMContentLoaded",
+    initClassName: "aos-init",
+    animatedClassName: "aos-animate",
+    useClassNames: false,
+    disableMutationObserver: false,
+    debounceDelay: 50,
+    throttleDelay: 99,
+    // Settings that can be overridden on per-element basis, by `data-aos-*` attributes:
+    offset: 120,
+    delay: 0,
+    duration: 400,
+    easing: "ease",
+    once: true,
+    mirror: true,
+    anchorPlacement: "top-bottom",
   },
   css: ["~/assets/css/main.css", "~/assets/css/google-fonts.css"],
   components: [

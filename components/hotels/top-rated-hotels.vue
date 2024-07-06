@@ -1,35 +1,35 @@
 <template>
   <div>
     <section class="px-4 py-6 mx-auto max-w-7xl sm:px-6 lg:px-8">
-      <span class="text-xl">Take a dip at these top-rated hotels</span>
+      <span class="text-xl">{{ $t('hotels.take_a_dip_at_these_top_rated_hotels') }}</span>
       <div>
         <!--Tabs navigation-->
         <ul class="flex flex-row flex-wrap mb-5 list-none border-b-0 ps-0" role="tablist" data-twe-nav-ref>
           <li role="presentation">
             <nuxt-link to=""
-              class="my-2 block border-x-0 border-b-2 border-t-0 border-transparent px-7 cursor-pointer pb-3.5 pt-4 text-xs font-semibold leading-tight text-neutral-500 hover:isolate hover:border-transparent hover:bg-neutral-100 focus:isolate focus:border-transparent data-[twe-nav-active]:border-primary data-[twe-nav-active]:text-primary dark:text-white/50 dark:hover:bg-neutral-700/60 dark:data-[twe-nav-active]:text-primary"
+              class="my-2 block border-x-0 border-b-2 border-t-0 border-transparent px-7 cursor-pointer pb-3.5 pt-4 text-sm font-semibold leading-tight text-neutral-500 hover:isolate hover:border-transparent hover:bg-neutral-100 focus:isolate focus:border-transparent data-[twe-nav-active]:border-primary data-[twe-nav-active]:text-primary dark:text-white/50 dark:hover:bg-neutral-700/60 dark:data-[twe-nav-active]:text-primary"
               data-twe-toggle="pill" data-twe-target="#tabs-egypt" data-twe-nav-active role="tab"
               aria-controls="tabs-egypt" aria-selected="true">
               <icon name="flag:eg-4x3" class="me-2" />
-              Egypt
+              {{ $t('hotels.egypt') }}
             </nuxt-link>
           </li>
           <li role="presentation">
             <nuxt-link to=""
-              class="my-2 block border-x-0 border-b-2 border-t-0 border-transparent px-7 cursor-pointer pb-3.5 pt-4 text-xs font-semibold leading-tight text-neutral-500 hover:isolate hover:border-transparent hover:bg-neutral-100 focus:isolate focus:border-transparent data-[twe-nav-active]:border-primary data-[twe-nav-active]:text-primary dark:text-white/50 dark:hover:bg-neutral-700/60 dark:data-[twe-nav-active]:text-primary"
+              class="my-2 block border-x-0 border-b-2 border-t-0 border-transparent px-7 cursor-pointer pb-3.5 pt-4 text-sm font-semibold leading-tight text-neutral-500 hover:isolate hover:border-transparent hover:bg-neutral-100 focus:isolate focus:border-transparent data-[twe-nav-active]:border-primary data-[twe-nav-active]:text-primary dark:text-white/50 dark:hover:bg-neutral-700/60 dark:data-[twe-nav-active]:text-primary"
               data-twe-toggle="pill" data-twe-target="#tabs-turkiye" role="tab" aria-controls="tabs-turkiye"
               aria-selected="false">
               <icon name="flag:tr-4x3" class="me-2" />
-              Türkiye
+              {{ $t('hotels.türkiye') }}
             </nuxt-link>
           </li>
           <li role="presentation">
             <nuxt-link to=""
-              class="my-2 block border-x-0 border-b-2 border-t-0 border-transparent px-7 cursor-pointer pb-3.5 pt-4 text-xs font-semibold leading-tight text-neutral-500 hover:isolate hover:border-transparent hover:bg-neutral-100 focus:isolate focus:border-transparent data-[twe-nav-active]:border-primary data-[twe-nav-active]:text-primary dark:text-white/50 dark:hover:bg-neutral-700/60 dark:data-[twe-nav-active]:text-primary"
+              class="my-2 block border-x-0 border-b-2 border-t-0 border-transparent px-7 cursor-pointer pb-3.5 pt-4 text-sm font-semibold leading-tight text-neutral-500 hover:isolate hover:border-transparent hover:bg-neutral-100 focus:isolate focus:border-transparent data-[twe-nav-active]:border-primary data-[twe-nav-active]:text-primary dark:text-white/50 dark:hover:bg-neutral-700/60 dark:data-[twe-nav-active]:text-primary"
               data-twe-toggle="pill" data-twe-target="#tabs-spain" role="tab" aria-controls="tabs-spain"
               aria-selected="false">
               <icon name="flag:es-4x3" class="me-2" />
-              Spain
+              {{ $t('hotels.spain') }}
             </nuxt-link>
           </li>
         </ul>
@@ -68,7 +68,7 @@
                     </div>
                     <nuxt-link to="" type="button"
                       class="flex items-center justify-center rounded-md bg-[#007cc2] px-5 py-2.5 text-center text-sm font-medium text-white hover:bg-gray-700 focus:outline-none focus:ring-4 focus:ring-blue-300 w-full">
-                      Check Prices</nuxt-link>
+                      {{ $t('buttons.check_prices') }}</nuxt-link>
                   </div>
                 </div>
               </div>

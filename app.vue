@@ -1,6 +1,8 @@
 <template>
   <NuxtLayout>
-    <NuxtPage />
+    <div data-aos="fade-up">
+      <NuxtPage />
+    </div>
   </NuxtLayout>
 </template>
 

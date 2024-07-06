@@ -4,8 +4,9 @@
       <div class="bg-[#e7f4fa]">
         <div class="w-full p-4 space-y-12 lg:grid lg:grid-cols-2 lg:gap-x-6 lg:space-y-0">
           <div class="lg:col-span-2">
-            <p class="text-xl">Download the Tripma app</p>
-            <span class="block font-serif text-sm">Easily compare hotel prices for savings on the go.</span>
+            <p class="text-xl">{{ $t('hotels.download_the_tripma_app') }}</p>
+            <span class="block font-serif text-sm">{{ $t('hotels.easily_compare_hotel_prices_for_savings_on_the_go')
+              }}</span>
           </div>
           <div class="grid grid-cols-2 my-4">
             <div class="mt-6 space-y-6">
