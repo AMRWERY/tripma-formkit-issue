@@ -66,7 +66,7 @@
                         <icon :name="item.featureTwoIcon" size="18px" class="text-[#60add9]" /> {{ item.featureTwo }}
                       </span>
                     </div>
-                    <nuxt-link to="" type="button"
+                    <nuxt-link :to="'/hotels/top-rated-hotels/1'" type="button"
                       class="flex items-center justify-center rounded-md bg-[#007cc2] px-5 py-2.5 text-center text-sm font-medium text-white hover:bg-gray-700 focus:outline-none focus:ring-4 focus:ring-blue-300 w-full">
                       {{ $t('buttons.check_prices') }}</nuxt-link>
                   </div>
