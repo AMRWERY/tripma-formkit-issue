@@ -27,7 +27,8 @@
             height="48" />
           <div class="mt-4">
             <p class="font-semibold text-[#1e1d4c] text-xl mb-2">{{ $t('hotels.search_simply') }}</p>
-            <span class="font-semibold text-lg text-[#606383">{{ $t('hotels.search_through_5_million_hotels_in_just_a_few_seconds') }}</span>
+            <span class="font-semibold text-lg text-[#606383">{{
+              $t('hotels.search_through_5_million_hotels_in_just_a_few_seconds') }}</span>
           </div>
         </div>
         <div class="col-span-1 text-center">
@@ -36,7 +37,8 @@
             height="48" />
           <div class="mt-4">
             <p class="font-semibold text-[#1e1d4c] text-xl mb-2">{{ $t('hotels.compare_confidently') }}</p>
-            <span class="font-semibold text-lg text-[#606383">{{ $t('hotels.compare_hotel_prices_from_100s_of_sites_at_once') }}</span>
+            <span class="font-semibold text-lg text-[#606383">{{
+              $t('hotels.compare_hotel_prices_from_100s_of_sites_at_once') }}</span>
           </div>
         </div>
         <div class="col-span-1 text-center">
@@ -45,7 +47,8 @@
             height="48" />
           <div class="mt-4">
             <p class="font-semibold text-[#1e1d4c] text-xl mb-2">{{ $t('hotels.save_big') }}</p>
-            <span class="font-semibold text-lg text-[#606383">{{ $t('hotels.discover_a_great_deal_to_book_on_our_partner_sites') }}</span>
+            <span class="font-semibold text-lg text-[#606383">{{
+              $t('hotels.discover_a_great_deal_to_book_on_our_partner_sites') }}</span>
           </div>
         </div>
       </div>
