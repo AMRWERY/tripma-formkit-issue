@@ -106,19 +106,14 @@ const logout = async () => {
   }
 }
 
-// const isAuthenticated = computed(() => {
-//   if (typeof sessionStorage !== 'undefined') {
-//     return sessionStorage.getItem('isAuthenticated') === 'true';
-//   } else {
-//     return false;
-//   }
-// });
-
 const { locale, setLocale } = useI18n();
 
 const updateLocale = (value) => {
   setLocale(value);
   localStorage.setItem("locale", value);
+  setTimeout(() => {
+    location.reload();
+  }, 1000);
 };
 
 const isRTL = ref(false);
