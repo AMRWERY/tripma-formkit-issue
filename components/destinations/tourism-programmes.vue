@@ -28,7 +28,7 @@
                 <h2 class="mb-2 text-base font-medium text-gray-700 dark:text-gray-300">
                   {{ offer.smallTitle }}
                 </h2>
-                <p class="text-base font-medium font-semibold text-green-500 ms-auto text-md dark:text-white">
+                <p class="text-base font-medium text-green-500 ms-auto text-md dark:text-white">
                   ${{ offer.price }}
                 </p>
               </div>
@@ -36,7 +36,7 @@
                 <p class="mb-2 text-base font-medium text-gray-900 dark:text-white">
                   {{ offer.hotel }}
                 </p>
-                <p class="mb-2 text-base font-medium font-semibold text-green-500 ms-auto text-md dark:text-white">
+                <p class="mb-2 text-base font-medium text-green-500 ms-auto text-md dark:text-white">
                   {{ offer.duration }}
                 </p>
               </div>
