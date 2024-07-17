@@ -92,7 +92,7 @@
               </div>
               <div class="hidden opacity-0 transition-opacity duration-150 ease-linear data-[twe-tab-active]:block"
                 id="tabs-info01" role="tabpanel" aria-labelledby="tabs-info-tab01">
-                info content
+                <info-tab />
               </div>
               <div class="hidden opacity-0 transition-opacity duration-150 ease-linear data-[twe-tab-active]:block"
                 id="tabs-photos01" role="tabpanel" aria-labelledby="tabs-photos-tab01">
