@@ -43,8 +43,8 @@
             </div>
           </div>
         </div>
-        <div id="collapseOne" class="hidden" data-twe-collapse-item data-twe-collapse-show
-          aria-labelledby="headingOne" data-twe-parent="#accordionExample">
+        <div id="collapseOne" class="hidden" data-twe-collapse-item data-twe-collapse-show aria-labelledby="headingOne"
+          data-twe-parent="#accordionExample">
           <div class="px-5 py-4">
             <ul class="flex flex-row flex-wrap mb-5 list-none border-b-0 ps-0" role="tablist" data-twe-nav-ref>
               <li role="presentation" class="flex-auto hidden -mt-5 text-center md:flex">

@@ -13,7 +13,6 @@
 
     <div class="py-12">
       <div class="px-4 mx-auto overflow-x-auto text-center bg-white rounded-lg shadow-lg xs:w-full">
-
         <div class="flex min-w-max">
           <!-- Column 1 -->
           <div class="flex items-center w-1/3 p-6 space-x-4">
