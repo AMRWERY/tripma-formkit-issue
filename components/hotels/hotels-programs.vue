@@ -16,7 +16,7 @@
                   <icon name="charm:heart" size="22px" />
                   <button
                     class="group flex items-center rounded-full border-0 bg-white px-3 py-1 text-neutral-800 transition hover:z-[2] focus:z-[3] focus:outline-none dark:bg-body-dark dark:text-white"
-                    type="button" data-twe-collapse-init data-twe-target="#collapseOne" aria-expanded="true"
+                    type="button" data-twe-collapse-init data-twe-target="#collapseOne" aria-expanded="false"
                     aria-controls="collapseOne">
                     <span
                       class="h-5 w-5 shrink-0 rotate-[-180deg] transition-transform duration-200 ease-in-out group-data-[twe-collapse-collapsed]:rotate-0 motion-reduce:transition-none">
@@ -43,7 +43,7 @@
             </div>
           </div>
         </div>
-        <div id="collapseOne" class="!visible" data-twe-collapse-item data-twe-collapse-show
+        <div id="collapseOne" class="hidden" data-twe-collapse-item data-twe-collapse-show
           aria-labelledby="headingOne" data-twe-parent="#accordionExample">
           <div class="px-5 py-4">
             <ul class="flex flex-row flex-wrap mb-5 list-none border-b-0 ps-0" role="tablist" data-twe-nav-ref>
@@ -100,7 +100,7 @@
               </div>
               <div class="hidden opacity-0 transition-opacity duration-150 ease-linear data-[twe-tab-active]:block"
                 id="tabs-reviews01" role="tabpanel" aria-labelledby="tabs-reviews-tab01">
-                reviews content
+                <reviews-tab />
               </div>
               <div class="hidden opacity-0 transition-opacity duration-150 ease-linear data-[twe-tab-active]:block"
                 id="tabs-prices01" role="tabpanel" aria-labelledby="tabs-prices-tab01">
