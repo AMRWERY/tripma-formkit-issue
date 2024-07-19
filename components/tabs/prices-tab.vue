@@ -36,7 +36,6 @@
                 <icon name="dashicons:arrow-right-alt2" class="font-bold text-white" size="20px" />
               </nuxt-link>
             </div>
-
           </div>
         </div>
       </div>
