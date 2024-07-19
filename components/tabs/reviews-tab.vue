@@ -10,7 +10,7 @@
         title="This rating is from Tripma rating index (tra) which combines guest ratings from top sites for a trustworthy result."
         data-twe-ripple-init />
     </div>
-
+    
     <div class="py-12">
       <div class="px-4 mx-auto overflow-x-auto text-center bg-white rounded-lg shadow-lg xs:w-full">
         <div class="flex min-w-max">

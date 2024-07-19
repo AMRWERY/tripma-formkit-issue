@@ -104,7 +104,7 @@
               </div>
               <div class="hidden opacity-0 transition-opacity duration-150 ease-linear data-[twe-tab-active]:block"
                 id="tabs-prices01" role="tabpanel" aria-labelledby="tabs-prices-tab01">
-                prices content
+                <prices-tab />
               </div>
               <div class="hidden opacity-0 transition-opacity duration-150 ease-linear data-[twe-tab-active]:block"
                 id="tabs-rooms01" role="tabpanel" aria-labelledby="tabs-rooms-tab01">
