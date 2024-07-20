@@ -28,17 +28,20 @@
               <p class="mt-2 text-sm text-gray-600">
                 Hurghada, 31.3 km to City center
               </p>
-              <div class="flex items-center justify-between">
-                <h1 class="text-gray-700 text-md"><strong>9.5 - Excellent</strong> (13118 reviews)</h1>
-                <div>
-                  <nuxt-link to="" type="button"
-                    class="px-5 py-2.5 text-sm font-bold text-white bg-[#028000] rounded-lg">
-                    View Deal
-                    <icon name="dashicons:arrow-right-alt2" class="font-bold text-white" size="20px" />
-                  </nuxt-link>
-                  <p class="mt-10 text-lg text-center text-gray-700">Price <span
-                      class="font-semibold text-blue-600 underline">176$</span></p>
+              <div class="flex flex-col items-start justify-between">
+                <div class="flex items-center justify-between w-full">
+                  <h1 class="text-gray-700 text-md"><strong>9.5 - Excellent</strong> (13118 reviews)</h1>
+                  <div>
+                    <nuxt-link to="" type="button"
+                      class="px-5 py-2.5 text-sm font-bold text-white bg-[#028000] rounded-lg">
+                      View Deal
+                      <icon name="dashicons:arrow-right-alt2" class="font-bold text-white" size="20px" />
+                    </nuxt-link>
+                    <p class="mt-10 text-lg text-center text-gray-700">Price <span
+                        class="font-semibold text-blue-600 underline">176$</span></p>
+                  </div>
                 </div>
+                <p class="-mt-4 text-sm font-thin">includes: <span class="font-normal underline">(Beach)</span></p>
               </div>
             </div>
           </div>
@@ -108,7 +111,7 @@
               </div>
               <div class="hidden opacity-0 transition-opacity duration-150 ease-linear data-[twe-tab-active]:block"
                 id="tabs-rooms01" role="tabpanel" aria-labelledby="tabs-rooms-tab01">
-                rooms content
+                <rooms-tab />
               </div>
             </div>
           </div>
