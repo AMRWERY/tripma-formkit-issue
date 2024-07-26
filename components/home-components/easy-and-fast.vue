@@ -24,7 +24,7 @@
           </div>
 
           <div class="ms-12">
-            <div class="relative w-full max-w-sm my-10 bg-white border border-gray-100 rounded-lg shadow-md">
+            <div class="relative w-full max-w-sm my-10 bg-white border border-gray-100 rounded-lg shadow-md" data-aos="zoom-out-left">
               <nuxt-link class="relative flex w-full mx-3 mt-3 overflow-hidden h-60 rounded-xl" to="#">
                 <img class="absolute top-0 object-cover w-full h-full end-0 peer"
                   src="https://justfields.com/storage/projects/7M5rV059/greece.jpg" />

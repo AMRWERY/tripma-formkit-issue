@@ -65,6 +65,25 @@ export default defineNuxtConfig({
     mirror: true,
     anchorPlacement: "top-bottom",
   },
+  aos: {
+    // Global settings:
+    disable: false,
+    startEvent: "DOMContentLoaded",
+    initClassName: "aos-init",
+    animatedClassName: "aos-animate",
+    useClassNames: false,
+    disableMutationObserver: false,
+    debounceDelay: 50,
+    throttleDelay: 99,
+    // Settings that can be overridden on per-element basis, by `data-aos-*` attributes:
+    offset: 120,
+    delay: 0,
+    duration: 400,
+    easing: "ease",
+    once: false,
+    mirror: false,
+    anchorPlacement: "top-bottom",
+  },
   css: ["~/assets/css/main.css", "~/assets/css/google-fonts.css"],
   components: [
     {
@@ -75,12 +94,20 @@ export default defineNuxtConfig({
   app: {
     head: {
       title: "Tripma",
-      script: [{}],
+      script: [
+        {
+          // src: 'https://unpkg.com/aos@next/dist/aos.js'
+        },
+      ],
       noscript: [],
       link: [
         // {
         //   rel: "stylesheet",
         //   href: "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css",
+        // },
+        // {
+        //   rel: "stylesheet",
+        //   href: "https://unpkg.com/aos@next/dist/aos.css",
         // },
       ],
       meta: [

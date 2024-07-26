@@ -160,9 +160,9 @@
                   </div>
                 </div>
               </div>
-
             </div>
           </div>
+          
           <div class="w-full px-4 md:w-1/2">
             <div class="lg:pl-20">
               <div class="mb-6">

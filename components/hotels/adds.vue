@@ -4,24 +4,24 @@
       <div
         class="grid items-center max-w-lg grid-cols-2 mx-auto mt-10 gap-x-8 gap-y-10 sm:max-w-xl sm:grid-cols-2 sm:gap-x-10 md:grid-cols-3 lg:mx-0 lg:max-w-none lg:grid-cols-7">
         <img class="object-contain w-full max-h-12 lg:col-span-1"
-          src="https://justfields.com/storage/projects/7M5rV059/booking.png" width="158" height="48" />
+          src="https://justfields.com/storage/projects/7M5rV059/booking.png" width="158" height="48" data-aos="zoom-in-up" />
         <img class="object-contain w-full max-h-12 lg:col-span-1"
-          src="https://justfields.com/storage/projects/7M5rV059/hotels.jpg" width="158" height="48" />
+          src="https://justfields.com/storage/projects/7M5rV059/hotels.jpg" width="158" height="48" data-aos="zoom-in-up" />
         <img class="object-contain w-full max-h-12 lg:col-span-1"
-          src="https://justfields.com/storage/projects/7M5rV059/expidea.jpg" width="158" height="48" />
+          src="https://justfields.com/storage/projects/7M5rV059/expidea.jpg" width="158" height="48" data-aos="zoom-in-up" />
         <img class="object-contain w-full max-h-12 lg:col-span-1"
-          src="https://justfields.com/storage/projects/7M5rV059/agoda.jpg" width="158" height="48" />
+          src="https://justfields.com/storage/projects/7M5rV059/agoda.jpg" width="158" height="48" data-aos="zoom-in-up" />
         <img class="object-contain w-full max-h-12 lg:col-span-1"
-          src="https://justfields.com/storage/projects/7M5rV059/home-away.jpg" width="158" height="48" />
+          src="https://justfields.com/storage/projects/7M5rV059/home-away.jpg" width="158" height="48" data-aos="zoom-in-up" />
         <img class="object-contain w-full max-h-12 lg:col-span-1"
-          src="https://justfields.com/storage/projects/7M5rV059/all.jpg" width="158" height="48" />
+          src="https://justfields.com/storage/projects/7M5rV059/all.jpg" width="158" height="48" data-aos="zoom-in-up" />
         <img class="object-contain w-full max-h-12 lg:col-span-1"
-          src="https://justfields.com/storage/projects/7M5rV059/trip.jpg" width="158" height="48" />
+          src="https://justfields.com/storage/projects/7M5rV059/trip.jpg" width="158" height="48" data-aos="zoom-in-up" />
       </div>
 
       <div
         class="grid items-center max-w-lg grid-cols-1 mx-auto mt-20 gap-x-8 gap-y-10 sm:max-w-xl sm:grid-cols-1 md:grid-cols-2 lg:mx-0 lg:max-w-none lg:grid-cols-3">
-        <div class="col-span-1 text-center">
+        <div class="col-span-1 text-center" data-aos="zoom-in-up">
           <img class="object-contain w-full max-h-20"
             src="https://imgcy.trivago.com//hardcodedimages/homepage-landing/usp/SearchDesktop.svg" width="158"
             height="48" />
@@ -31,7 +31,7 @@
               $t('hotels.search_through_5_million_hotels_in_just_a_few_seconds') }}</span>
           </div>
         </div>
-        <div class="col-span-1 text-center">
+        <div class="col-span-1 text-center" data-aos="zoom-in-up">
           <img class="object-contain w-full max-h-20"
             src="https://imgcy.trivago.com//hardcodedimages/homepage-landing/usp/CompareDesktop.svg" width="158"
             height="48" />
@@ -41,7 +41,7 @@
               $t('hotels.compare_hotel_prices_from_100s_of_sites_at_once') }}</span>
           </div>
         </div>
-        <div class="col-span-1 text-center">
+        <div class="col-span-1 text-center" data-aos="zoom-in-up">
           <img class="object-contain w-full max-h-20"
             src="https://imgcy.trivago.com//hardcodedimages/homepage-landing/usp/SaveDesktop.svg" width="158"
             height="48" />

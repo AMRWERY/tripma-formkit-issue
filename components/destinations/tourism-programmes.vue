@@ -18,7 +18,8 @@
         </div>
 
         <div class="mt-6 space-y-12 lg:grid lg:grid-cols-3 lg:gap-x-6 lg:space-y-0">
-          <div v-for="offer in store.filteredPlacesArray" :key="offer" class="relative group">
+          <div v-for="offer in store.filteredPlacesArray" :key="offer" class="relative group" data-aos="fade-up"
+          data-aos-duration="3000">
             <div
               class="relative w-full overflow-hidden bg-white rounded-lg h-80 sm:aspect-h-1 sm:aspect-w-2 lg:aspect-h-1 lg:aspect-w-1 group-hover:opacity-75 sm:h-64">
               <img :src="offer.cover" class="object-cover object-center w-full h-full" />
