@@ -9,7 +9,7 @@
           <nav class="items-center hidden text-lg text-gray-800 font-sen lg:flex" v-if="!isAuthPage">
             <nuxt-link to="/destinations" class="flex px-6 py-2">{{ $t('layout.destinations') }}</nuxt-link>
             <nuxt-link to="/hotels" class="flex px-6 py-2">{{ $t('layout.hotels') }}</nuxt-link>
-            <nuxt-link to="#" class="flex px-6 py-2">{{ $t('layout.flights') }}</nuxt-link>
+            <nuxt-link to="/flights" class="flex px-6 py-2">{{ $t('layout.flights') }}</nuxt-link>
             <nuxt-link to="#" class="flex px-6 py-2">{{ $t('layout.bookings') }}</nuxt-link>
             <!-- Toggle Language -->
             <nuxt-link class="me-4 text-neutral-600 dark:text-white" to="" role="button" v-if="isRTL"
@@ -45,7 +45,7 @@
       <div v-if="isMenuOpen" class="px-6 py-4 space-y-2 bg-white shadow-md lg:hidden">
         <nuxt-link to="/destinations" class="block py-2">{{ $t('layout.destinations') }}</nuxt-link>
         <nuxt-link to="/hotels" class="block py-2">{{ $t('layout.hotels') }}</nuxt-link>
-        <nuxt-link to="#" class="block py-2">{{ $t('layout.flights') }}</nuxt-link>
+        <nuxt-link to="/flights" class="block py-2">{{ $t('layout.flights') }}</nuxt-link>
         <nuxt-link to="#" class="block py-2">{{ $t('layout.bookings') }}</nuxt-link>
         <!-- Toggle Language -->
         <nuxt-link class="me-4 text-neutral-600 dark:text-white" to="" role="button" v-if="isRTL"
@@ -83,7 +83,6 @@
 import { changeLocale } from '@formkit/vue'
 
 const store = useAuthStore()
-
 const isMenuOpen = ref(false)
 const showOverlay = ref(false);
 
