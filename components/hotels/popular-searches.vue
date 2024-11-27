@@ -27,61 +27,67 @@
         <div class="mb-6">
           <div class="hidden opacity-100 transition-opacity duration-150 ease-linear data-[twe-tab-active]:block"
             id="tabs-cities" role="tabpanel" aria-labelledby="tabs-cities-tab" data-twe-tab-active>
-            <Carousel v-bind="settings" :breakpoints="breakpoints" :wrap-around="true" :transition="500">
-              <Slide v-for="item in citiesPlaces" :key="item.id">
-                <div class="carousel__item">
-                  <div class="relative max-w-sm mx-auto overflow-hidden bg-white rounded-lg shadow-lg">
-                    <img class="object-cover w-full h-56 rounded-t-lg" :src="item.img">
-                    <div class="absolute inset-0 flex flex-col items-start justify-start p-4">
-                      <div class="p-1 bg-white rounded-xl">
-                        <h2 class="text-xl font-semibold text-[#007cc2]">{{ item.title }}</h2>
-                      </div>
-                      <div class="p-1 mt-2 bg-white rounded-xl">
-                        <p class="text-[#007cc2]">{{ item.hotels }} <span class="text-gray-800">{{ $t('hotels.hotels')
-                            }}</span></p>
-                      </div>
-                      <div class="p-1 mt-2 bg-white rounded-xl">
-                        <p class="text-[#007cc2]"><span class="text-gray-800">{{ $t('hotels.avg') }}</span> {{ item.avg
-                          }}$</p>
+            <ClientOnly>
+              <Carousel v-bind="settings" :breakpoints="breakpoints" :wrap-around="true" :transition="500">
+                <Slide v-for="item in citiesPlaces" :key="item.id">
+                  <div class="carousel__item">
+                    <div class="relative max-w-sm mx-auto overflow-hidden bg-white rounded-lg shadow-lg">
+                      <img class="object-cover w-full h-56 rounded-t-lg" :src="item.img">
+                      <div class="absolute inset-0 flex flex-col items-start justify-start p-4">
+                        <div class="p-1 bg-white rounded-xl">
+                          <h2 class="text-xl font-semibold text-[#007cc2]">{{ item.title }}</h2>
+                        </div>
+                        <div class="p-1 mt-2 bg-white rounded-xl">
+                          <p class="text-[#007cc2]">{{ item.hotels }} <span class="text-gray-800">{{ $t('hotels.hotels')
+                              }}</span></p>
+                        </div>
+                        <div class="p-1 mt-2 bg-white rounded-xl">
+                          <p class="text-[#007cc2]"><span class="text-gray-800">{{ $t('hotels.avg') }}</span> {{
+                            item.avg
+                            }}$</p>
+                        </div>
                       </div>
                     </div>
                   </div>
-                </div>
-              </Slide>
-              <template #addons>
-                <Navigation />
-              </template>
-            </Carousel>
+                </Slide>
+                <template #addons>
+                  <Navigation />
+                </template>
+              </Carousel>
+            </ClientOnly>
           </div>
 
           <div class="hidden opacity-0 transition-opacity duration-150 ease-linear data-[twe-tab-active]:block"
             id="tabs-destinations" role="tabpanel" aria-labelledby="tabs-cities-tab">
-            <Carousel v-bind="settings" :breakpoints="breakpoints" :wrap-around="true" :transition="500">
-              <Slide v-for="item in destinationsPlaces" :key="item.id">
-                <div class="carousel__item">
-                  <div class="relative max-w-sm mx-auto overflow-hidden bg-white rounded-lg shadow-lg">
-                    <img class="object-cover w-full h-56 rounded-t-lg" :src="item.img">
-                    <div class="absolute inset-0 flex flex-col items-start justify-start p-4">
-                      <div class="p-1 bg-white rounded-xl">
-                        <h2 class="text-xl font-semibold text-[#007cc2]">{{ item.title }}</h2>
-                      </div>
-                      <div class="p-1 mt-2 bg-white rounded-xl">
-                        <p class="text-[#007cc2]">{{ item.hotels }} <span class="text-gray-800">{{ $t('hotels.hotels')
-                            }}</span>
-                        </p>
-                      </div>
-                      <div class="p-1 mt-2 bg-white rounded-xl">
-                        <p class="text-[#007cc2]"><span class="text-gray-800">{{ $t('hotels.avg') }}</span> {{ item.avg
-                          }}$</p>
+            <ClientOnly>
+              <Carousel v-bind="settings" :breakpoints="breakpoints" :wrap-around="true" :transition="500">
+                <Slide v-for="item in destinationsPlaces" :key="item.id">
+                  <div class="carousel__item">
+                    <div class="relative max-w-sm mx-auto overflow-hidden bg-white rounded-lg shadow-lg">
+                      <img class="object-cover w-full h-56 rounded-t-lg" :src="item.img">
+                      <div class="absolute inset-0 flex flex-col items-start justify-start p-4">
+                        <div class="p-1 bg-white rounded-xl">
+                          <h2 class="text-xl font-semibold text-[#007cc2]">{{ item.title }}</h2>
+                        </div>
+                        <div class="p-1 mt-2 bg-white rounded-xl">
+                          <p class="text-[#007cc2]">{{ item.hotels }} <span class="text-gray-800">{{ $t('hotels.hotels')
+                              }}</span>
+                          </p>
+                        </div>
+                        <div class="p-1 mt-2 bg-white rounded-xl">
+                          <p class="text-[#007cc2]"><span class="text-gray-800">{{ $t('hotels.avg') }}</span> {{
+                            item.avg
+                            }}$</p>
+                        </div>
                       </div>
                     </div>
                   </div>
-                </div>
-              </Slide>
-              <template #addons>
-                <Navigation />
-              </template>
-            </Carousel>
+                </Slide>
+                <template #addons>
+                  <Navigation />
+                </template>
+              </Carousel>
+            </ClientOnly>
           </div>
         </div>
       </div>

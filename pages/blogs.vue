@@ -19,7 +19,7 @@
             <div class="flex flex-col items-center overflow-hidden border rounded-lg md:flex-row">
               <nuxt-link to="#"
                 class="relative self-start block w-full h-48 overflow-hidden bg-gray-100 group shrink-0 md:h-full md:w-32 lg:w-48">
-                <img src="https://themehut.co/html/geair/assets/img/blog/blog_img01.jpg" loading="lazy"
+                <img src="https://justfields.com/storage/projects/7M5rV059/blogs-01.jpg" loading="lazy"
                   class="absolute inset-0 object-cover object-center w-full h-full transition duration-200 group-hover:scale-110" />
               </nuxt-link>
 
@@ -48,7 +48,7 @@
             <div class="flex flex-col items-center overflow-hidden border rounded-lg md:flex-row">
               <nuxt-link to="#"
                 class="relative self-start block w-full h-48 overflow-hidden bg-gray-100 group shrink-0 md:h-full md:w-32 lg:w-48">
-                <img src="https://themehut.co/html/geair/assets/img/blog/blog_img02.jpg" loading="lazy"
+                <img src="https://justfields.com/storage/projects/7M5rV059/blogs-02.jpg" loading="lazy"
                   class="absolute inset-0 object-cover object-center w-full h-full transition duration-200 group-hover:scale-110" />
               </nuxt-link>
 
@@ -77,7 +77,7 @@
             <div class="flex flex-col items-center overflow-hidden border rounded-lg md:flex-row">
               <nuxt-link to="#"
                 class="relative self-start block w-full h-48 overflow-hidden bg-gray-100 group shrink-0 md:h-full md:w-32 lg:w-48">
-                <img src="https://themehut.co/html/geair/assets/img/blog/blog_img03.jpg" loading="lazy"
+                <img src="https://justfields.com/storage/projects/7M5rV059/blogs-03.jpg" loading="lazy"
                   class="absolute inset-0 object-cover object-center w-full h-full transition duration-200 group-hover:scale-110" />
               </nuxt-link>
 
@@ -106,7 +106,7 @@
             <div class="flex flex-col items-center overflow-hidden border rounded-lg md:flex-row">
               <nuxt-link to="#"
                 class="relative self-start block w-full h-48 overflow-hidden bg-gray-100 group shrink-0 md:h-full md:w-32 lg:w-48">
-                <img src="https://themehut.co/html/geair/assets/img/blog/blog_img04.jpg" loading="lazy"
+                <img src="https://justfields.com/storage/projects/7M5rV059/blogs-04.jpg" loading="lazy"
                   class="absolute inset-0 object-cover object-center w-full h-full transition duration-200 group-hover:scale-110" />
               </nuxt-link>
 

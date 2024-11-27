@@ -66,7 +66,7 @@
 
             <!--Carousel Controls - prev item-->
             <button
-              class="absolute bottom-0 left-0 top-0 z-[1] flex w-[15%] items-center justify-center border-0 bg-none p-0 text-center text-black opacity-50 transition-opacity duration-150 ease-[cubic-bezier(0.25,0.1,0.25,1.0)] hover:text-black hover:no-underline hover:opacity-90 hover:outline-none focus:text-black focus:no-underline focus:opacity-90 focus:outline-none motion-reduce:transition-none dark:text-white dark:opacity-50 dark:hover:text-white dark:focus:text-white"
+              class="absolute bottom-0 left-0 top-20 z-[1] flex w-[15%] items-center justify-center border-0 bg-none p-0 text-center text-black opacity-50 transition-opacity duration-150 ease-[cubic-bezier(0.25,0.1,0.25,1.0)] hover:text-black hover:no-underline hover:opacity-90 hover:outline-none focus:text-black focus:no-underline focus:opacity-90 focus:outline-none motion-reduce:transition-none dark:text-white dark:opacity-50 dark:hover:text-white dark:focus:text-white"
               type="button" data-twe-target="#carouselExampleCaptions" data-twe-slide="prev">
               <span class="inline-block w-8 h-8">
                 <icon name="material-symbols:keyboard-double-arrow-left-rounded" class="w-6 h-6" />
@@ -76,7 +76,7 @@
             </button>
             <!--Carousel Controls - next item-->
             <button
-              class="absolute bottom-0 right-0 top-0 z-[1] flex w-[15%] items-center justify-center border-0 bg-none p-0 text-center text-black opacity-50 transition-opacity duration-150 ease-[cubic-bezier(0.25,0.1,0.25,1.0)] hover:text-black hover:no-underline hover:opacity-90 hover:outline-none focus:text-black focus:no-underline focus:opacity-90 focus:outline-none motion-reduce:transition-none dark:text-white dark:opacity-50 dark:hover:text-white dark:focus:text-white"
+              class="absolute bottom-0 right-0 top-20 z-[1] flex w-[15%] items-center justify-center border-0 bg-none p-0 text-center text-black opacity-50 transition-opacity duration-150 ease-[cubic-bezier(0.25,0.1,0.25,1.0)] hover:text-black hover:no-underline hover:opacity-90 hover:outline-none focus:text-black focus:no-underline focus:opacity-90 focus:outline-none motion-reduce:transition-none dark:text-white dark:opacity-50 dark:hover:text-white dark:focus:text-white"
               type="button" data-twe-target="#carouselExampleCaptions" data-twe-slide="next">
               <span class="inline-block w-8 h-8">
                 <icon name="material-symbols:keyboard-double-arrow-right-rounded" class="w-6 h-6" />
@@ -92,15 +92,20 @@
         <div
           class="grid items-center max-w-lg grid-cols-4 mx-auto mt-10 gap-x-8 gap-y-10 sm:max-w-xl sm:grid-cols-6 sm:gap-x-10 lg:mx-0 lg:max-w-none lg:grid-cols-5">
           <img class="object-contain w-full h-40 col-span-2 max-h-12 lg:col-span-1"
-            src="https://tailwindui.com/img/logos/158x48/transistor-logo-gray-900.svg" width="158" height="48" data-aos="zoom-in-up" />
+            src="https://justfields.com/storage/projects/7M5rV059/user-16.png" width="158" height="48"
+            data-aos="zoom-in-up" />
           <img class="object-contain w-full col-span-2 max-h-12 lg:col-span-1"
-            src="https://tailwindui.com/img/logos/158x48/reform-logo-gray-900.svg" width="158" height="48" data-aos="zoom-in-up" />
+            src="https://justfields.com/storage/projects/7M5rV059/user-01.png" width="158" height="48"
+            data-aos="zoom-in-up" />
           <img class="object-contain w-full col-span-2 max-h-12 lg:col-span-1"
-            src="https://tailwindui.com/img/logos/158x48/tuple-logo-gray-900.svg" width="158" height="48" data-aos="zoom-in-up" />
+            src="https://justfields.com/storage/projects/7M5rV059/user-03.png" width="158" height="48"
+            data-aos="zoom-in-up" />
           <img class="object-contain w-full col-span-2 max-h-12 sm:col-start-2 lg:col-span-1"
-            src="https://tailwindui.com/img/logos/158x48/savvycal-logo-gray-900.svg" width="158" height="48" data-aos="zoom-in-up" />
+            src="https://justfields.com/storage/projects/7M5rV059/user-04.png" width="158" height="48"
+            data-aos="zoom-in-up" />
           <img class="object-contain w-full col-span-2 col-start-2 max-h-12 sm:col-start-auto lg:col-span-1"
-            src="https://tailwindui.com/img/logos/158x48/statamic-logo-gray-900.svg" width="158" height="48" data-aos="zoom-in-up" />
+            src="https://justfields.com/storage/projects/7M5rV059/user-02.png" width="158" height="48"
+            data-aos="zoom-in-up" />
         </div>
       </div>
     </section>

@@ -21,8 +21,8 @@
                       class="w-full p-2 pl-10 border border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500"
                       :placeholder="$t('placeholder.where_to')" ref="autocomplete" />
                     <ul v-if="showOptions && filteredOptions.length"
-                      class="absolute left-0 z-10 mt-1 bg-white border border-gray-300 rounded-md shadow-lg"
-                      :style="{ width: $refs.autocomplete.offsetWidth + 'px' }">
+                      class="absolute left-0 z-10 mt-1 overflow-y-auto bg-white border border-gray-300 rounded-md shadow-lg"
+                      :style="{ width: $refs.autocomplete.offsetWidth + 'px', maxHeight: '200px' }">
                       <li v-for="country in filteredOptions" :key="country.code" @mousedown="selectOption(country)"
                         class="px-4 py-2 font-medium cursor-pointer hover:bg-indigo-600 hover:text-white text-start">
                         {{ country.name }} - {{ country.code }}

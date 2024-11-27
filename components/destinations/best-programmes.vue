@@ -17,40 +17,42 @@
         </ul>
       </div>
 
-      <Carousel v-bind="settings" :breakpoints="breakpoints" :wrap-around="true" :autoplay="3500" :transition="500">
-        <Slide v-for="offer in store.places" :key="offer">
-          <div class="carousel__item">
-            <nuxt-link :to="'/destinations/best-programmes/' + offer.id"
-              class="mx-auto overflow-hidden duration-300 transform bg-white rounded-lg shadow-md mt-11 w-80 dark:bg-slate-800 hover:scale-105 hover:shadow-lg text-start">
-              <img class="object-cover object-center w-full h-64" :src="offer.cover" />
-              <div class="p-4">
-                <div class="flex items-center">
-                  <h2 class="mb-2 text-base font-medium text-gray-700 dark:text-gray-300">
-                    {{ offer.smallTitle }}
-                  </h2>
-                  <p class="ml-auto text-base font-semibold text-green-500 text-md dark:text-white">
-                    ${{ offer.price }}
-                  </p>
+      <<ClientOnly>
+        <Carousel v-bind="settings" :breakpoints="breakpoints" :wrap-around="true" :autoplay="3500" :transition="500">
+          <Slide v-for="offer in store.places" :key="offer">
+            <div class="carousel__item">
+              <nuxt-link :to="'/destinations/best-programmes/' + offer.id"
+                class="mx-auto overflow-hidden duration-300 transform bg-white rounded-lg shadow-md mt-11 w-80 dark:bg-slate-800 hover:scale-105 hover:shadow-lg text-start">
+                <img class="object-cover object-center w-full h-64" :src="offer.cover" />
+                <div class="p-4">
+                  <div class="flex items-center">
+                    <h2 class="mb-2 text-base font-medium text-gray-700 dark:text-gray-300">
+                      {{ offer.smallTitle }}
+                    </h2>
+                    <p class="ml-auto text-base font-semibold text-green-500 text-md dark:text-white">
+                      ${{ offer.price }}
+                    </p>
+                  </div>
+                  <div class="flex items-center">
+                    <p class="mb-2 text-base font-medium text-gray-900 truncate dark:text-white">
+                      {{ offer.hotel }}
+                    </p>
+                    <p class="inline ml-auto text-sm font-semibold text-green-500 dark:text-white">
+                      {{ offer.duration }}
+                    </p>
+                  </div>
+                  <div class="flex items-center">
+                    <rating />
+                  </div>
                 </div>
-                <div class="flex items-center">
-                  <p class="mb-2 text-base font-medium text-gray-900 truncate dark:text-white">
-                    {{ offer.hotel }}
-                  </p>
-                  <p class="inline ml-auto text-sm font-semibold text-green-500 dark:text-white">
-                    {{ offer.duration }}
-                  </p>
-                </div>
-                <div class="flex items-center">
-                  <rating />
-                </div>
-              </div>
-            </nuxt-link>
-          </div>
-        </Slide>
-        <template #addons>
-          <Navigation />
-        </template>
-      </Carousel>
+              </nuxt-link>
+            </div>
+          </Slide>
+          <template #addons>
+            <Navigation />
+          </template>
+        </Carousel>
+        </ClientOnly>
     </section>
   </div>
 </template>
