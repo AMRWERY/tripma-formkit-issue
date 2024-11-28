@@ -9,7 +9,7 @@
         </div>
         <div class="flex px-5 py-24 mx-auto">
           <div
-            class="relative z-10 flex flex-col w-full p-8 mt-10 bg-white rounded-lg shadow-md lg:w-1/3 md:w-1/2 md:ml-auto md:mt-0">
+            class="relative z-10 flex flex-col w-full p-8 mt-10 bg-white rounded-lg shadow-md lg:w-1/3 md:w-1/2 md:ms-auto md:mt-0">
             <h2 class="mb-1 text-lg font-semibold text-center text-gray-900 title-font">{{ $t('contact_us.get_in_touch')
               }}</h2>
             <p class="mb-5 font-medium text-center text-gray-900 text-md">{{
