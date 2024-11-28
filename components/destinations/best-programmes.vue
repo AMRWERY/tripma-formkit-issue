@@ -17,7 +17,7 @@
         </ul>
       </div>
 
-      <<ClientOnly>
+      <ClientOnly>
         <Carousel v-bind="settings" :breakpoints="breakpoints" :wrap-around="true" :autoplay="3500" :transition="500">
           <Slide v-for="offer in store.places" :key="offer">
             <div class="carousel__item">
