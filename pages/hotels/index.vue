@@ -13,6 +13,6 @@
 const { t } = useI18n()
 
 useHead(() => ({
-  title: t('head.hotels')
+  titleTemplate: t('head.hotels')
 }))
 </script>

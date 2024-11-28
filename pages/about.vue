@@ -107,5 +107,9 @@
 </template>
 
 <script setup>
+const { t } = useI18n()
 
+useHead(() => ({
+  titleTemplate: t('head.about')
+}))
 </script>

@@ -263,5 +263,9 @@
 </template>
 
 <script setup>
+const { t } = useI18n();
 
+useHead(() => ({
+  titleTemplate: t('head.privacy_policy')
+}))
 </script>

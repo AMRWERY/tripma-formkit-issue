@@ -2,7 +2,7 @@
   "layout": {
     "destinations": "الوجهات",
     "hotels": "الفنادق",
-    "flights": "الرحلات",
+    "flights": "رحلات الطيران",
     "bookings": "الحجوزات",
     "login": "تسجيل الدخول",
     "sign_up": "إنشاء حساب",
@@ -10,7 +10,7 @@
     "book_your_trip_in_a_minute_get_full_control_for_much_longer": "احجز رحلتك في دقيقة، احصل على التحكم الكامل لفترة أطول.",
     "company": "الشركة",
     "blogs": "المدونات",
-    "about": "حول",
+    "about": "عنا",
     "contact": "اتصل",
     "contact_us": "اتصل بنا",
     "help_faq": "المساعدة / الأسئلة الشائعة",
@@ -216,8 +216,14 @@
   "head": {
     "destinations": "الوجهات",
     "hotels": "الفنادق",
+    "flights": "رحلات الطيران",
     "login": "تسجيل الدخول",
     "sign_up": "تسجيل حساب جديد",
-    "reset_password": "إعادة تعيين كلمة المرور"
+    "reset_password": "إعادة تعيين كلمة المرور",
+    "about": "عنا",
+    "blogs": "المدونات",
+    "contact_us": "اتصل بنا",
+    "help_faq": "المساعدة / الأسئلة الشائعة",
+    "privacy_policy": "سياسة الخصوصية"
   }
 }

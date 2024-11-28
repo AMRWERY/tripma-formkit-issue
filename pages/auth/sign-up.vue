@@ -97,6 +97,6 @@ const signUpWithGoogleAccount = () => {
 const translatedRegisterSchema = computed(() => translateSchemaLabels(registrationSchema, t));
 
 useHead(() => ({
-  title: t('head.sign_up')
+  titleTemplate: t('head.sign_up')
 }))
 </script>

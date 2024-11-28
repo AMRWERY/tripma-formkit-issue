@@ -45,6 +45,10 @@ const data = reactive({
 const { t } = useI18n();
 
 const translatedContactUsSchema = computed(() => translateSchemaLabels(contactUsSchema, t));
+
+useHead(() => ({
+  titleTemplate: t('head.contact_us')
+}))
 </script>
 
 <style scoped>

@@ -216,8 +216,14 @@
   "head": {
     "destinations": "Destinations",
     "hotels": "Hotels",
+    "flights": "Flights",
     "login": "Login",
     "sign_up": "Sign up",
-    "reset_password": "Reset password"
+    "reset_password": "Reset password",
+    "about": "About",
+    "blogs": "Blogs",
+    "contact_us": "Contact Us",
+    "help_faq": "Help / FAQ",
+    "privacy_policy": "Privacy Policy"
   }
 }

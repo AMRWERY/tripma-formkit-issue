@@ -86,5 +86,9 @@
 </template>
 
 <script setup>
+const { t } = useI18n();
 
+useHead(() => ({
+  titleTemplate: t('head.help_faq')
+}))
 </script>

@@ -304,7 +304,7 @@ onMounted(async () => {
 });
 
 useHead(() => ({
-  title: programDetails.value ? programDetails.value.title : '',
+  titleTemplate: programDetails.value ? programDetails.value.title : '',
 }));
 </script>
 
