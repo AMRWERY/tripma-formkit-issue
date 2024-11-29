@@ -90,7 +90,8 @@
     "email_address": "عنوان البريد الإلكتروني",
     "where_to": "إلى أين؟",
     "check_in": "تسجيل الوصول",
-    "check_out": "تسجيل الخروج"
+    "check_out": "تسجيل الخروج",
+    "depart_return": "الذهاب - العودة"
   },
   "destinations": {
     "best_tourist_programs": "أفضل البرامج السياحية",
@@ -211,7 +212,8 @@
     "hotels": "الفنادق",
     "avg": "متوسط",
     "download_the_tripma_app": "قم بتنزيل تطبيق تريبما",
-    "easily_compare_hotel_prices_for_savings_on_the_go": "قارن أسعار الفنادق بسهولة لتوفير المال أثناء التنقل."
+    "easily_compare_hotel_prices_for_savings_on_the_go": "قارن أسعار الفنادق بسهولة لتوفير المال أثناء التنقل.",
+    "infants": "الرضع"
   },
   "head": {
     "destinations": "الوجهات",

@@ -1,6 +1,7 @@
 <template>
   <div>
     <section class="px-4 py-6 mx-auto max-w-7xl sm:px-6 lg:px-8">
+      <breadcrumb />
       <div class="py-6 bg-white">
         <div class="max-w-screen-xl px-4 mx-auto md:px-8">
           <!-- text - start -->

@@ -1,6 +1,7 @@
 <template>
   <div>
     <section class="px-4 py-6 mx-auto max-w-7xl sm:px-6 lg:px-8">
+      <breadcrumb />
       <div class="relative -mt-[5.75rem] overflow-hidden pt-[5.75rem]">
         <div class="px-4 sm:px-6 lg:px-8">
           <div class="relative mx-auto max-w-[37.5rem] pt-10 text-center pb-12">

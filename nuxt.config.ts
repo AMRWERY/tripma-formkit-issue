@@ -43,9 +43,9 @@ export default defineNuxtConfig({
   carousel: {
     prefix: "MyPrefix",
   },
-  build: {
-    transpile: ["@vuepic/vue-datepicker"],
-  },
+  // build: {
+  //   transpile: ["@vuepic/vue-datepicker"],
+  // },
   aos: {
     // Global settings:
     disable: true,

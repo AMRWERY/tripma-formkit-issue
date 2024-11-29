@@ -1,7 +1,8 @@
 <template>
   <div>
     <section class="py-10 font-poppins">
-      <div class="px-4 mx-auto max-w-7xl">
+      <breadcrumb :title="breadcrumbTitle" />
+      <div class="px-4 mx-auto mt-5 max-w-7xl">
         <div class="flex flex-wrap mb-24 -mx-4">
           <div class="w-full px-4 mb-8 md:w-1/2 md:mb-0">
             <div class="sticky top-0 z-50 overflow-hidden">
@@ -162,7 +163,7 @@
               </div>
             </div>
           </div>
-          
+
           <div class="w-full px-4 md:w-1/2">
             <div class="lg:pl-20">
               <div class="mb-6">
@@ -301,6 +302,10 @@ onMounted(async () => {
   programId.value = route.params.id;
   programDetails.value = await store.getProgramById(programId.value)
   // console.log(programId.value);
+});
+
+const breadcrumbTitle = computed(() => {
+  return programDetails?.value?.title;
 });
 
 useHead(() => ({

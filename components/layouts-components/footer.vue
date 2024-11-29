@@ -49,7 +49,7 @@
                 </div>
 
                 <div>
-                  <nuxt-link to="/f-a-q"
+                  <nuxt-link to="/help-and-faq"
                     class="text-gray-500 transition duration-100 hover:text-indigo-500 active:text-indigo-600">{{
                       $t('layout.help_faq') }}</nuxt-link>
                 </div>

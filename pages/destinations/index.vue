@@ -1,5 +1,6 @@
 <template>
   <div>
+    <breadcrumb />
     <best-programmes />
     <results />
     <tourism-programmes />

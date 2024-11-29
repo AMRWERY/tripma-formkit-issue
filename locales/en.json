@@ -90,7 +90,8 @@
     "email_address": "Email Address",
     "where_to": "Where to?",
     "check_in": "Check in",
-    "check_out": "Check out"
+    "check_out": "Check out",
+    "depart_return": "Depart - Return"
   },
   "destinations": {
     "best_tourist_programs": "Best Tourist Programs",
@@ -211,7 +212,8 @@
     "hotels": "Hotels",
     "avg": "Avg",
     "download_the_tripma_app": "Download the Tripma app",
-    "easily_compare_hotel_prices_for_savings_on_the_go": "Easily compare hotel prices for savings on the go."
+    "easily_compare_hotel_prices_for_savings_on_the_go": "Easily compare hotel prices for savings on the go.",
+    "infants": "Infants"
   },
   "head": {
     "destinations": "Destinations",

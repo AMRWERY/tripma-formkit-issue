@@ -1,7 +1,9 @@
 <template>
   <NuxtLayout>
     <!-- <div data-aos="fade-up"> -->
+    <progress-bar />
     <NuxtPage />
+    <scroll-to-top />
     <!-- </div> -->
   </NuxtLayout>
 </template>

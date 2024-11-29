@@ -1,6 +1,7 @@
 <template>
   <div>
     <section class="px-4 py-6 mx-auto max-w-7xl sm:px-6 lg:px-8">
+      <breadcrumb />
       <div class="py-6 bg-white sm:py-8 lg:py-12">
         <div class="max-w-screen-xl px-4 mx-auto md:px-8">
           <div class="grid gap-8 md:grid-cols-2 lg:gap-12">

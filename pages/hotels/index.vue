@@ -1,5 +1,6 @@
 <template>
   <div>
+    <breadcrumb />
     <filters />
     <adds />
     <top-rated-hotels />
