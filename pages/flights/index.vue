@@ -16,6 +16,14 @@
           <tabs />
         </div>
       </div>
+
+      <div class="mx-auto my-10 max-w-7xl">
+        <div class="w-full p-4 bg-[#fdf5cb] rounded-lg">
+          <p class="text-sm text-gray-700">Please be aware that the local Egyptian banks have imposed a restriction on
+            the use of local debit and credit cards for international purchases. Kindly use an international card if
+            possible. We regret the inconvenience caused.</p>
+        </div>
+      </div>
     </div>
   </div>
 </template>
