@@ -1,14 +1,16 @@
 <template>
-  <transition name="overlay-fade">
-    <div v-if="visible" class="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-75">
-      <div class="flex items-center justify-center">
-        <div class="flex justify-center text-5xl text-white align-center">
-          <div>{{ translatedMessage }}</div>
-          <icon name="svg-spinners:blocks-scale" class="mt-5 ms-2" />
+  <div>
+    <transition name="overlay-fade">
+      <div v-if="visible" class="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-75">
+        <div class="flex items-center justify-center">
+          <div class="flex justify-center text-5xl text-white align-center">
+            <div>{{ translatedMessage }}</div>
+            <icon name="svg-spinners:blocks-scale" class="mt-5 ms-2" />
+          </div>
         </div>
       </div>
-    </div>
-  </transition>
+    </transition>
+  </div>
 </template>
 
 <script setup>

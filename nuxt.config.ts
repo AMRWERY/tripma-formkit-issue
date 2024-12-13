@@ -34,11 +34,11 @@ export default defineNuxtConfig({
     storesDirs: ["./stores/**", "./custom-folder/stores/**"],
   },
   i18n: {
-    vueI18n: "./plugins/i18n.config.js",
+    vueI18n: "./i18n.config.js",
   },
   formkit: {
     autoImport: true,
-    configFile: "./plugins/formkit.config.js",
+    configFile: "./formkit.config.js",
   },
   carousel: {
     prefix: "MyPrefix",

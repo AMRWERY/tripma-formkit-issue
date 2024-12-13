@@ -9,7 +9,7 @@
     </div>
 
     <HeadlessTransitionRoot appear :show="isOpen" as="template">
-      <HeadlessDialog as="div" @close="closeModal" class="absolute bottom-0 left-0">
+      <HeadlessDialog as="div" @close="closeModal" class="absolute bottom-0 start-0">
         <HeadlessTransitionChild as="template" enter="duration-300 ease-out" enter-from="opacity-0"
           enter-to="opacity-100" leave="duration-200 ease-in" leave-from="opacity-100" leave-to="opacity-0">
           <div class="fixed inset-0 bg-black/25" />

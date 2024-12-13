@@ -15,7 +15,7 @@
               </div>
               <!-- logo - end -->
 
-              <p class="font-semibold text-gray-500 sm:pr-8">{{
+              <p class="font-semibold text-gray-500 sm:pe-8">{{
                 $t('layout.book_your_trip_in_a_minute_get_full_control_for_much_longer') }}</p>
             </div>
 

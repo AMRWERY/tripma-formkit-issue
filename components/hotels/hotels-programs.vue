@@ -33,7 +33,7 @@
                       <nuxt-link to="" type="button"
                         class="px-5 py-2.5 text-sm font-bold text-white bg-[#028000] rounded-lg">
                         View Deal
-                        <icon name="dashicons:arrow-right-alt2" class="font-bold text-white" size="20px" />
+                        <icon name="dashicons:arrow-end-alt2" class="font-bold text-white" size="20px" />
                       </nuxt-link>
                       <p class="mt-10 text-lg text-center text-gray-700">Price <span
                           class="font-semibold text-blue-600 underline">{{ hotel.price }}$</span></p>

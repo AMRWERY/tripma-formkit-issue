@@ -79,7 +79,7 @@
                 <li>It shares some characteristics of a real written text</li>
               </ul>
 
-              <blockquote class="pl-4 mb-6 italic text-gray-500 border-l-4 sm:text-lg md:mb-8 md:pl-6">“This is a
+              <blockquote class="ps-4 mb-6 italic text-gray-500 border-l-4 sm:text-lg md:mb-8 md:ps-6">“This is a
                 section of
                 some simple filler text, also known as placeholder text. It shares some characteristics of a real
                 written

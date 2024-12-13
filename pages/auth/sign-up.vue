@@ -77,6 +77,7 @@ const data = reactive({
 const signUp = () => {
   loading.value = true;
   setTimeout(() => {
+    console.log('Form Data:', data);
     store.userSignUp({
       firstName: data.firstName,
       lastName: data.lastName,

@@ -2,7 +2,7 @@
   <div>
     <section class="px-4 py-6 mx-auto max-w-7xl sm:px-6 lg:px-8">
       <div class="grid max-w-2xl grid-cols-1 mx-auto gap-x-8 gap-y-16 sm:gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-2">
-        <div class="lg:pr-8 lg:pt-4">
+        <div class="lg:pe-8 lg:pt-4">
           <div class="lg:max-w-lg">
             <p class="text-[#5e6282] mb-12">{{ $t('home.testimonials') }}</p>
             <p class="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-6xl">{{
@@ -17,7 +17,7 @@
             <div class="relative w-full overflow-hidden after:clear-both after:block after:content-['']">
               <!--First Testimonial / Carousel item-->
               <div
-                class="relative float-left -mr-[100%] hidden w-full text-center transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none"
+                class="relative float-left -me-[100%] hidden w-full text-center transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none"
                 data-twe-carousel-active data-twe-carousel-item style="backface-visibility: hidden">
                 <p class="max-w-4xl mx-auto text-xl italic text-neutral-700 dark:text-neutral-300">
                   "{{
@@ -33,7 +33,7 @@
 
               <!-- Second Testimonial / Carousel item -->
               <div
-                class="relative float-left -mr-[100%] hidden w-full text-center transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none"
+                class="relative float-left -me-[100%] hidden w-full text-center transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none"
                 data-twe-carousel-item style="backface-visibility: hidden">
                 <p class="max-w-4xl mx-auto text-xl italic text-neutral-700 dark:text-neutral-300">
                   "{{
@@ -49,7 +49,7 @@
 
               <!-- Third Testimonial / Carousel item -->
               <div
-                class="relative float-left -mr-[100%] hidden w-full text-center transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none"
+                class="relative float-left -me-[100%] hidden w-full text-center transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none"
                 data-twe-carousel-item style="backface-visibility: hidden">
                 <p class="max-w-4xl mx-auto text-xl italic text-neutral-700 dark:text-neutral-300">
                   "{{
@@ -66,20 +66,20 @@
 
             <!--Carousel Controls - prev item-->
             <button
-              class="absolute bottom-0 left-0 top-20 z-[1] flex w-[15%] items-center justify-center border-0 bg-none p-0 text-center text-black opacity-50 transition-opacity duration-150 ease-[cubic-bezier(0.25,0.1,0.25,1.0)] hover:text-black hover:no-underline hover:opacity-90 hover:outline-none focus:text-black focus:no-underline focus:opacity-90 focus:outline-none motion-reduce:transition-none dark:text-white dark:opacity-50 dark:hover:text-white dark:focus:text-white"
+              class="absolute bottom-0 start-0 top-20 z-[1] flex w-[15%] items-center justify-center border-0 bg-none p-0 text-center text-black opacity-50 transition-opacity duration-150 ease-[cubic-bezier(0.25,0.1,0.25,1.0)] hover:text-black hover:no-underline hover:opacity-90 hover:outline-none focus:text-black focus:no-underline focus:opacity-90 focus:outline-none motion-reduce:transition-none dark:text-white dark:opacity-50 dark:hover:text-white dark:focus:text-white"
               type="button" data-twe-target="#carouselExampleCaptions" data-twe-slide="prev">
               <span class="inline-block w-8 h-8">
-                <icon name="material-symbols:keyboard-double-arrow-left-rounded" class="w-6 h-6" />
+                <icon name="material-symbols:keyboard-double-arrow-start-rounded" class="w-6 h-6" />
               </span>
               <span
                 class="!absolute !-m-px !h-px !w-px !overflow-hidden !whitespace-nowrap !border-0 !p-0 ![clip:rect(0,0,0,0)]">Previous</span>
             </button>
             <!--Carousel Controls - next item-->
             <button
-              class="absolute bottom-0 right-0 top-20 z-[1] flex w-[15%] items-center justify-center border-0 bg-none p-0 text-center text-black opacity-50 transition-opacity duration-150 ease-[cubic-bezier(0.25,0.1,0.25,1.0)] hover:text-black hover:no-underline hover:opacity-90 hover:outline-none focus:text-black focus:no-underline focus:opacity-90 focus:outline-none motion-reduce:transition-none dark:text-white dark:opacity-50 dark:hover:text-white dark:focus:text-white"
+              class="absolute bottom-0 end-0 top-20 z-[1] flex w-[15%] items-center justify-center border-0 bg-none p-0 text-center text-black opacity-50 transition-opacity duration-150 ease-[cubic-bezier(0.25,0.1,0.25,1.0)] hover:text-black hover:no-underline hover:opacity-90 hover:outline-none focus:text-black focus:no-underline focus:opacity-90 focus:outline-none motion-reduce:transition-none dark:text-white dark:opacity-50 dark:hover:text-white dark:focus:text-white"
               type="button" data-twe-target="#carouselExampleCaptions" data-twe-slide="next">
               <span class="inline-block w-8 h-8">
-                <icon name="material-symbols:keyboard-double-arrow-right-rounded" class="w-6 h-6" />
+                <icon name="material-symbols:keyboard-double-arrow-end-rounded" class="w-6 h-6" />
               </span>
               <span
                 class="!absolute !-m-px !h-px !w-px !overflow-hidden !whitespace-nowrap !border-0 !p-0 ![clip:rect(0,0,0,0)]">Next</span>

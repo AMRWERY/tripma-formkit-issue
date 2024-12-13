@@ -15,13 +15,13 @@
               <div class="relative">
                 <div class="p-4 text-center bg-gray-100">
                   <div class="relative">
-                    <icon name="radix-icons:magnifying-glass" class="absolute w-5 h-5 text-gray-400 left-3 top-3" />
+                    <icon name="radix-icons:magnifying-glass" class="absolute w-5 h-5 text-gray-400 start-3 top-3" />
                     <input v-model="query" @input="filterOptions" @focus="showOptions = true" @blur="hideOptions"
                       type="text" id="autocomplete"
-                      class="w-full p-2 pl-10 border border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500"
+                      class="w-full p-2 ps-10 border border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500"
                       :placeholder="$t('placeholder.where_to')" ref="autocomplete" />
                     <ul v-if="showOptions && filteredOptions.length"
-                      class="absolute left-0 z-10 mt-1 overflow-y-auto bg-white border border-gray-300 rounded-md shadow-lg"
+                      class="absolute start-0 z-10 mt-1 overflow-y-auto bg-white border border-gray-300 rounded-md shadow-lg"
                       :style="{ width: $refs.autocomplete.offsetWidth + 'px', maxHeight: '200px' }">
                       <li v-for="country in filteredOptions" :key="country.code" @mousedown="selectOption(country)"
                         class="px-4 py-2 font-medium cursor-pointer hover:bg-indigo-600 hover:text-white text-start">

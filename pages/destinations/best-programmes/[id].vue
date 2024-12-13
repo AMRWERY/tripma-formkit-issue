@@ -7,12 +7,12 @@
           <div class="w-full px-4 mb-8 md:w-1/2 md:mb-0">
             <div class="sticky top-0 z-50 overflow-hidden">
               <div class="relative mb-6 lg:mb-10">
-                <nuxt-link class="absolute left-0 transform lg:ml-2 top-1/2 translate-1/2" to="#">
+                <nuxt-link class="absolute start-0 transform lg:ms-2 top-1/2 translate-1/2" to="#">
                   <icon name="ic:twotone-keyboard-double-arrow-left"
                     class="w-5 h-5 text-blue-500 bi bi-chevron-left dark:text-blue-200" />
                 </nuxt-link>
                 <img class="object-cover w-full lg:h-1/2" :src="programDetails?.cover" />
-                <nuxt-link class="absolute right-0 transform lg:mr-2 top-1/2 translate-1/2" to="#">
+                <nuxt-link class="absolute end-0 transform lg:me-2 top-1/2 translate-1/2" to="#">
                   <icon name="ic:twotone-keyboard-double-arrow-right"
                     class="w-5 h-5 text-blue-500 bi bi-chevron-left dark:text-blue-200" />
                 </nuxt-link>
@@ -165,10 +165,10 @@
           </div>
 
           <div class="w-full px-4 md:w-1/2">
-            <div class="lg:pl-20">
+            <div class="lg:ps-20">
               <div class="mb-6">
                 <span class="text-red-500 dark:text-red-200">{{ programDetails?.duration }}</span>
-                <h2 class="max-w-xl mt-2 mb-4 text-5xl font-bold md:text-6xl font-heading dark:text-gray-300">
+                <h2 class="max-w-xl mt-2 mb-4 text-5xl font-bold md:text-4xl font-heading dark:text-gray-300">
                   {{ programDetails?.title }}
                 </h2>
                 <div class="flex">

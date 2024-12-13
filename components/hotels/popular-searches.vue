@@ -138,7 +138,7 @@ onMounted(async () => {
 
 <style scoped>
 .rounded-t-lg {
-  border-top-left-radius: 0.5rem;
-  border-top-right-radius: 0.5rem;
+  border-top-start-radius: 0.5rem;
+  border-top-end-radius: 0.5rem;
 }
 </style>

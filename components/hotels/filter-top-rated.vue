@@ -12,7 +12,7 @@
               class="mt-1.5 w-full rounded-lg border-gray-300 text-gray-700 sm:text-sm cursor-pointer" value="$100"
               readonly>
             <div v-if="showMenu.menu1"
-              class="absolute left-0 z-10 w-full p-6 rounded-lg shadow-lg bg-gray-50 top-full md:w-96 drop-shadow-xl">
+              class="absolute start-0 z-10 w-full p-6 rounded-lg shadow-lg bg-gray-50 top-full md:w-96 drop-shadow-xl">
               <h2 class="mb-4 text-lg font-bold">Set Price Range</h2>
               <div class="mb-4">
                 <input type="range" id="price-range1" class="w-full accent-indigo-600" min="0" max="1000"
@@ -43,7 +43,7 @@
             <input type="text" id="HeadlineAct2" name="HeadlineAct2" value="Select"
               class="mt-1.5 w-full rounded-lg border-gray-300 text-gray-700 sm:text-sm cursor-pointer" readonly>
             <div v-if="showMenu.menu2"
-              class="absolute left-0 z-10 w-full p-6 rounded-lg shadow-lg bg-gray-50 top-full md:w-96 drop-shadow-xl">
+              class="absolute start-0 z-10 w-full p-6 rounded-lg shadow-lg bg-gray-50 top-full md:w-96 drop-shadow-xl">
               <h2 class="mb-4 text-lg font-bold">Hotel Rating</h2>
               <div class="mb-4">
                 <div class="flex justify-between space-x-2">
@@ -161,7 +161,7 @@
               class="mt-1.5 w-full rounded-lg border-gray-300 text-gray-700 sm:text-sm cursor-pointer" value="All"
               readonly>
             <div v-if="showMenu.menu3"
-              class="absolute left-0 z-10 w-full p-6 rounded-lg shadow-lg bg-gray-50 top-full md:w-96 drop-shadow-xl">
+              class="absolute start-0 z-10 w-full p-6 rounded-lg shadow-lg bg-gray-50 top-full md:w-96 drop-shadow-xl">
               <div class="space-y-5">
                 <div class="flex justify-between">
                   <span
@@ -213,7 +213,7 @@
               class="mt-1.5 w-full rounded-lg border-gray-400 text-gray-700 sm:text-sm cursor-pointer" value="Location"
               readonly>
             <div v-if="showMenu.menu4"
-              class="absolute left-0 z-10 w-full p-6 rounded-lg shadow-lg bg-gray-50 top-full md:w-96 drop-shadow-xl h-96">
+              class="absolute start-0 z-10 w-full p-6 rounded-lg shadow-lg bg-gray-50 top-full md:w-96 drop-shadow-xl h-96">
               <!-- Updated height here -->
               <div class="relative h-[280px]">
                 <iframe width="100%" height="100%" frameborder="0" marginheight="0" marginwidth="0" title="map"

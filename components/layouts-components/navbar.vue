@@ -34,7 +34,7 @@
               <icon name="mdi:logout" size="30px" />
             </nuxt-link>
           </nav>
-          <button type="button" class="flex flex-col ml-4 lg:hidden" @click="toggleMenu" v-if="!isAuthPage">
+          <button type="button" class="flex flex-col ms-4 lg:hidden" @click="toggleMenu" v-if="!isAuthPage">
             <icon name="mingcute:menu-fill" class="mb-1" />
           </button>
         </div>

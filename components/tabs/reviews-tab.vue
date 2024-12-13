@@ -5,7 +5,7 @@
     </p>
     <div class="flex items-center">
       <p class="mt-2 text-sm font-thin">based on 13140 reviews from top sites</p>
-      <icon name="bi:exclamation-circle" size="15px" class="mt-1 ml-2 cursor-pointer" data-twe-toggle="tooltip"
+      <icon name="bi:exclamation-circle" size="15px" class="mt-1 ms-2 cursor-pointer" data-twe-toggle="tooltip"
         data-twe-placement="right"
         title="This rating is from Tripma rating index (tra) which combines guest ratings from top sites for a trustworthy result."
         data-twe-ripple-init />
@@ -83,7 +83,7 @@
               <span class="text-xs font-thin">Verified review from</span>
               <div class="flex items-center justify-end w-full">
                 <img src="/svg/flight-plane.svg" class="w-8 h-auto p-1 bg-blue-200 rounded-full">
-                <p class="ml-2 text-normal">Tripma</p>
+                <p class="ms-2 text-normal">Tripma</p>
               </div>
             </div>
           </div>
